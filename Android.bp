@@ -300,6 +300,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "vendor.xiaomi.hw.touchfeature-service",
+	owner: "xiaomi",
+	src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.xiaomi.sensor.citsensorservice.aidl",
 	owner: "xiaomi",
 	src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml",

@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/duchamp
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/hw/vendor.xiaomi.hw.touchfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.hw.touchfeature-service \
     vendor/xiaomi/duchamp/proprietary/odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl \
     vendor/xiaomi/duchamp/proprietary/odm/etc/cust_color.xml:$(TARGET_COPY_OUT_ODM)/etc/cust_color.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
@@ -78,6 +79,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/etc/dsi_n11a_41_02_0b_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n11a_41_02_0b_dsc_vdo_mi.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/dsi_n11a_42_02_0a_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n11a_42_02_0a_dsc_vdo_mi.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/display.rc \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/n11a_41_02_0b_dsc_vdo_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/n11a_41_02_0b_dsc_vdo_cust_silky_brightness.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/n11a_41_02_0b_dsc_vdo_pq.xml:$(TARGET_COPY_OUT_ODM)/etc/n11a_41_02_0b_dsc_vdo_pq.xml \
@@ -189,6 +191,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/netdagent:$(TARGET_COPY_OUT_VENDOR)/bin/netdagent \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/tee-supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/tee-supplicant \
+    vendor/xiaomi/duchamp/proprietary/vendor/bin/toucheventcheck:$(TARGET_COPY_OUT_VENDOR)/bin/toucheventcheck \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
@@ -355,6 +358,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/init.panel_info.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.panel_info.sh \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
@@ -438,6 +442,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/thermalbreakboostconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalbreakboostconfig.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/tp_kmsg_init_duchamp.sh:$(TARGET_COPY_OUT_VENDOR)/etc/tp_kmsg_init_duchamp.sh \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
@@ -721,6 +726,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpq_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpq_sec.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpqconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpqconfig.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpqparamparser.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/sensors.touch.detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.detect.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdlbvol.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswgamedap.so \
@@ -802,6 +808,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta \
     vendor/xiaomi/duchamp/proprietary/vendor/mitee/ta/2e8fade5-0c7a-46cc-810e6468baee66b9.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/2e8fade5-0c7a-46cc-810e6468baee66b9.ta \
@@ -857,6 +864,7 @@ PRODUCT_PACKAGES += \
     vendor.dolby.hardware.dms \
     vendor.dolby.media.c2@1.0-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
+    vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl
 
 PRODUCT_PACKAGES += \
