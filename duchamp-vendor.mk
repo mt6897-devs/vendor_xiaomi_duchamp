@@ -6,8 +6,423 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/duchamp
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6897/ParameterDB_ae.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6897/ParameterDB_ae.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6897/ParameterDB_af.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6897/ParameterDB_af.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6897/ParameterDB_awb.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6897/ParameterDB_awb.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6897/ParameterDB_awbsync.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6897/ParameterDB_awbsync.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6897/ParameterDB_feature.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6897/ParameterDB_feature.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6897/ParameterDB_flash.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6897/ParameterDB_flash.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6897/ParameterDB_flashcali.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6897/ParameterDB_flashcali.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/ParameterDB.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/ParameterDB.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/sw_top_control_data.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/sw_top_control_data.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/top_control_data.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/top_control_data.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6897/ParameterDB_pd.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6897/ParameterDB_pd.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6897/ParameterDB_pipeline.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6897/ParameterDB_pipeline.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6897/ParameterDB_tone.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6897/ParameterDB_tone.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/mt6897/ISP_mapping.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/mt6897/ISP_param.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6897/ISP_info.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6897/ISP_info.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/hw/vendor.xiaomi.hardware.dtool1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.hardware.dtool1-service \
     vendor/xiaomi/duchamp/proprietary/odm/bin/hw/vendor.xiaomi.hw.touchfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.hw.touchfeature-service \
     vendor/xiaomi/duchamp/proprietary/odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/CFR_para_UW.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/CFR_para_UW.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/CameraImageSize.json:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraImageSize.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/CameraPlatformInfo.json:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraPlatformInfo.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/ai_scene.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/ai_scene.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_0478CF20:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_0478CF20 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_168C0E45:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_168C0E45 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_16E8F8F9:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_16E8F8F9 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_20D4BB1D:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_20D4BB1D \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_56058501:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_56058501 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_6627C7AA:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_6627C7AA \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_8D84710A:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_8D84710A \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_ACCFB464:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_ACCFB464 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_CA81E52F:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_CA81E52F \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_D249D0CD:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_D249D0CD \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/aivsModel_FF7AE9B5:$(TARGET_COPY_OUT_ODM)/etc/camera/aivsModel_FF7AE9B5 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/alCFR_Segmodel.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/alCFR_Segmodel.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/arcsoft_dynamicEV_config.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/arcsoft_dynamicEV_config.ini \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/beauty_config_cn.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_cn.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/beauty_config_gl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_gl.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/beauty_config_in.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_in.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/beauty_config_ru.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_ru.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/default_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/default_param.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/1720888_32.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/1720888_32.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/1720888_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/1720888_64.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/2821809890_32.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/2821809890_32.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/2821809890_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/2821809890_64.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/32/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/32/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/32/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/32/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/3711416411_32.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/3711416411_32.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/3711416411_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/3711416411_64.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/64/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/64/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/64/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/64/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/1031135984:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/1031135984 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/1711078354:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/1711078354 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/1966560729:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/1966560729 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/2192216592:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/2192216592 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/2242409300:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/2242409300 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/2405225402:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/2405225402 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/2451251547:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/2451251547 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/2626574232:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/2626574232 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/2722133617:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/2722133617 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/3252339865:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/3252339865 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/3606267036:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/3606267036 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/model/982209079:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/model/982209079 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/1068495261:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/1068495261 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/1202823203:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/1202823203 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/1587396406:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/1587396406 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/183601851:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/183601851 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/1846660881:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/1846660881 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/2135547585:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/2135547585 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/2199122872:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/2199122872 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/2532213662:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/2532213662 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/2611148883:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/2611148883 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/2644822710:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/2644822710 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/3171791906:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/3171791906 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/33333333:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/33333333 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/3533515369:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/3533515369 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/3626370065:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/3626370065 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/4183165925:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/4183165925 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/4224303816:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/4224303816 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/837151146:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/837151146 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/858912661:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/858912661 \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/0_ModeClassical/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/0_ModeClassical/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/0_ModeClassical/filter.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/0_ModeClassical/filter.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/1_ModeNative/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/1_ModeNative/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/1_ModeNative/filter.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/10_ColorTone/Effects/1_ModeNative/filter.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/10_ColorTone/mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/10_ColorTone/mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/10_ColorTone/mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/10_ColorTone/mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_none.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_none.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/15_DLRetouch/mode_rear.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/FaceMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/FaceMask.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/FaceMask_Capture.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/FaceMask_Capture.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothNative/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/4_Hessian/FaceMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/4_Hessian/FaceMask.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/4_Hessian/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/Effects/4_Hessian/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_light.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_light.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/20_FaceRetouch/mode_rear.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/LeftEye.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/LeftEye.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/RightEye.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/RightEye.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eye_pupil.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eye_pupil.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/left_eye.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/left_eye.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/right_eye.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/right_eye.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/mode_base.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/30_BasicRetouch/mode_base.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/xr.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/0_ModeClassical/xr.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/1_ModeNative/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/1_ModeNative/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/1_ModeNative/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/1_ModeNative/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/1_ModeNative/xr.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/1_ModeNative/xr.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/2_ModeRear/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/2_ModeRear/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/2_ModeRear/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/2_ModeRear/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/2_ModeRear/xr.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/Effects/2_ModeRear/xr.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/40_FaceStereo/mode_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/40_FaceStereo/mode_rear.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/0_ModeClassical/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/0_ModeClassical/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/0_ModeClassical/filter.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/0_ModeClassical/filter.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/1_ModeNative/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/1_ModeNative/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/1_ModeNative/filter.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/50_SkinTone/Effects/1_ModeNative/filter.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/50_SkinTone/mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/50_SkinTone/mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/50_SkinTone/mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/50_SkinTone/mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/Eyebrow.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/Eyebrow.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/sh.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/sh.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/yyy.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/yyy.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/yyz.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/yyz.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/zc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeClassical/zc.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/Eyebrow.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/Eyebrow.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/sh.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/sh.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/yyy.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/yyy.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/yyz.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/yyz.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/zc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/Effects/0_ModeNative/zc.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/60_Makeup/mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/60_Makeup/mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/eye_refine.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/eye_refine.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/facelift.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/facelift.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/nose.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/0_ModeClassical/nose.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/eye_refine.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/eye_refine.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/facelift.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/facelift.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/nose.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/1_ModeNative/nose.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/eye_refine.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/eye_refine.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/facelift.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/2_ModeOtherFront/facelift.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/3_ModeVideo/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/3_ModeVideo/effect.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/3_ModeVideo/eye_refine.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/3_ModeVideo/eye_refine.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/3_ModeVideo/facelift.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/3_ModeVideo/facelift.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/4_ModeRear/effect_capture.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/4_ModeRear/effect_capture.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/4_ModeRear/effect_preview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/4_ModeRear/effect_preview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/4_ModeRear/eye_refine.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/Effects/4_ModeRear/eye_refine.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_other_front.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_other_front.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_rear.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_video.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/70_FacialRefine/mode_video.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/Debug/configuration.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/Debug/configuration.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/Debug/mode_debug.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/Debug/mode_debug.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_list.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_list.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_classical.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_classical.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_classical_otherFront.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_classical_otherFront.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_clear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_clear.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_native.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_native.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_native_otherFront.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_native_otherFront.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_otherRear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_otherRear.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_video.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_video.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/GlobalConfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/GlobalConfig.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYEV3_PROC_PUPIL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYEV3_PROC_PUPIL.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_GUIDE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_GUIDE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BOX_FILTER_2X2.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BOX_FILTER_2X2.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_COLOR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_COLOR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_CONTRAST_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_CONTRAST_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACERETOUCH_LUMA_TO_ALPHA_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACERETOUCH_LUMA_TO_ALPHA_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_ADVANCE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_ADVANCE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_SIMPLE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_SIMPLE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FACERETOUCH_PROCESS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FACERETOUCH_PROCESS.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FILTER.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FILTER.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEAN_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEAN_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MERGE_MASK.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MERGE_MASK.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_POINT.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_SPOTLESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_SPOTLESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_TEXTURE_RETOUCH_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_TEXTURE_RETOUCH_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE_INCREMENTAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE_INCREMENTAL.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL_Define_WARP_TO_ROI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL_Define_WARP_TO_ROI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_BRIGHT_EYEV3_PROC_PUPIL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_BRIGHT_EYEV3_PROC_PUPIL.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_GUIDE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_GUIDE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BOX_FILTER_2X2.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_BOX_FILTER_2X2.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_COLOR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_COLOR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_CONTRAST_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_CONTRAST_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACERETOUCH_LUMA_TO_ALPHA_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACERETOUCH_LUMA_TO_ALPHA_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_ADVANCE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_ADVANCE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_SIMPLE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_SIMPLE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_HESSIAN_FACERETOUCH_PROCESS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_HESSIAN_FACERETOUCH_PROCESS.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_HESSIAN_FILTER.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_HESSIAN_FILTER.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LUT_3D_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_LUT_3D_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEAN_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEAN_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_MERGE_MASK.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_MERGE_MASK.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_POINT.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_SPOTLESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_SPOTLESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_TEXTURE_RETOUCH_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_TEXTURE_RETOUCH_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_AFFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_AFFINE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_AFFINE_INCREMENTAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_AFFINE_INCREMENTAL.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_NORMAL.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_NORMAL_Define_WARP_TO_ROI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_NORMAL_Define_WARP_TO_ROI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/truesight_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/truesight_param.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/truesight_param_debug.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/truesight_param_debug.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/deblur_sd_opencl_binary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_sd_opencl_binary.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/deblur_sd_opencl_params.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_sd_opencl_params.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/deblur_txt_apu.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_txt_apu.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/dualcam_bokeh_params_pro.json:$(TARGET_COPY_OUT_ODM)/etc/camera/dualcam_bokeh_params_pro.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/dualcam_depth_params_pro.json:$(TARGET_COPY_OUT_ODM)/etc/camera/dualcam_depth_params_pro.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/dualcam_predepth_params_pro.json:$(TARGET_COPY_OUT_ODM)/etc/camera/dualcam_predepth_params_pro.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/ldc/AAC_LDC_REAR_PACKDATA.dat:$(TARGET_COPY_OUT_ODM)/etc/camera/ldc/AAC_LDC_REAR_PACKDATA.dat \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/ldc/AI_Seg.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/ldc/AI_Seg.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/ldc/LDC_REAR_FPC_TUNING.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/ldc/LDC_REAR_FPC_TUNING.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/ldc/LDC_REAR_FPC_TUNING_AI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/ldc/LDC_REAR_FPC_TUNING_AI.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/ldc/SUNNY_LDC_REAR_PACKDATA.dat:$(TARGET_COPY_OUT_ODM)/etc/camera/ldc/SUNNY_LDC_REAR_PACKDATA.dat \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/libarcsoft_high_dynamic_range.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/libarcsoft_high_dynamic_range.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/libarcsoft_mf_superresolution.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/libarcsoft_mf_superresolution.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/libarcsoft_super_night_raw.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/libarcsoft_super_night_raw.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/libarcsoft_super_night_raw_front.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/libarcsoft_super_night_raw_front.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/mage_mtk_capture_bokeh_cl.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mage_mtk_capture_bokeh_cl.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/mage_mtk_capture_bokeh_mvpu.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mage_mtk_capture_bokeh_mvpu.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/miSATTRatio_params_2sat.json:$(TARGET_COPY_OUT_ODM)/etc/camera/miSATTRatio_params_2sat.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/miSAT_params_2sat.json:$(TARGET_COPY_OUT_ODM)/etc/camera/miSAT_params_2sat.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/mialgo_mtk_capture_bokeh_depth_cl.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mialgo_mtk_capture_bokeh_depth_cl.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/monocam_bokeh_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/monocam_bokeh_params.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/ocr_aio:$(TARGET_COPY_OUT_ODM)/etc/camera/ocr_aio \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/para_ini_cal.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/para_ini_cal.bin \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/preview_bokeh_params_mono.json:$(TARGET_COPY_OUT_ODM)/etc/camera/preview_bokeh_params_mono.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/preview_bokeh_params_pro.json:$(TARGET_COPY_OUT_ODM)/etc/camera/preview_bokeh_params_pro.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/sceneDetection.xml \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/MiCamCPUControl.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/MiCamCPUControl.xml \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/dualbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/dualbokehsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/ecocloudinfo.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/ecocloudinfo.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/ecoplatforminfo.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/ecoplatforminfo.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/frontbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontbokehsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/frontsinglesnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsinglesnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/frontsupernightsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsupernightsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/manualsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/manualsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/mivisettings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivisettings.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/normalpreview.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/normalpreview.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/normalsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/normalsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/overridesettings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/overridesettings.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/rearsupernightsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/rearsupernightsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/satsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/satsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/settings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/settings.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/superhdsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/superhdsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/tpfrontbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/tpfrontbokehsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/tpfrontnormalsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/tpfrontnormalsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/tpfrontsnsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/tpfrontsnsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/tprearbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/tprearbokehsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/tprearnormalsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/tprearnormalsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/tprearsnsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/tprearsnsnapshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomi/uwsuperlowlightshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/uwsuperlowlightshot.json \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/cust_color.xml:$(TARGET_COPY_OUT_ODM)/etc/cust_color.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/disp0/dsi_n11a_41_02_0b_dsc_vdo/cct_pcc.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n11a_41_02_0b_dsc_vdo/cct_pcc.txt \
@@ -79,6 +494,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/etc/dsi_n11a_41_02_0b_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n11a_41_02_0b_dsc_vdo_mi.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/dsi_n11a_42_02_0a_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n11a_42_02_0a_dsc_vdo_mi.xml \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/display.rc \
+    vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.hardware.dtool1.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.dtool1.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/n11a_41_02_0b_dsc_vdo_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/n11a_41_02_0b_dsc_vdo_cust_silky_brightness.xml \
@@ -110,10 +526,44 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/etc/thermal-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-video.conf \
     vendor/xiaomi/duchamp/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
     vendor/xiaomi/duchamp/proprietary/odm/etc/thermal-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-yuanshen.conf \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsr.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsr.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.capdepth.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.capdepth.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.caphdr.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.caphdr.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.depurple.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.depurple.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.hdr.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.hdr.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.hwjpeg.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.hwjpeg.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.hwproc.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.hwproc.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.ldc.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.ldc.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.memcpy.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.memcpy.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.miaideblur.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.miaideblur.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.miaiie.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.miaiie.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.mibokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.mibokeh.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.rawsuperlight.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.rawsuperlight.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.rawsuperlight_front.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.rawsuperlight_front.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.skinbeautifier.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.skinbeautifier.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.swflip.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/plugins/com.xiaomi.plugin.swflip.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/hw/displayfeature.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/displayfeature.default.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/fingerprint.fpc_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc_fod.default.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libArcNetMtk.so:$(TARGET_COPY_OUT_ODM)/lib64/libArcNetMtk.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libMiDispDevManager.so:$(TARGET_COPY_OUT_ODM)/lib64/libMiDispDevManager.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalAILDC.so:$(TARGET_COPY_OUT_ODM)/lib64/libalAILDC.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalAI_Seg.so:$(TARGET_COPY_OUT_ODM)/lib64/libalAI_Seg.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalAI_Seg_CFR.so:$(TARGET_COPY_OUT_ODM)/lib64/libalAI_Seg_CFR.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalCFR.so:$(TARGET_COPY_OUT_ODM)/lib64/libalCFR.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalLDC.so:$(TARGET_COPY_OUT_ODM)/lib64/libalLDC.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalNN.so:$(TARGET_COPY_OUT_ODM)/lib64/libalNN.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalNN_engine.so:$(TARGET_COPY_OUT_ODM)/lib64/libalNN_engine.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalNN_gpu.so:$(TARGET_COPY_OUT_ODM)/lib64/libalNN_gpu.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libalhLDC.so:$(TARGET_COPY_OUT_ODM)/lib64/libalhLDC.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libarcsoft_bokeh_high_dynamic_range.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_bokeh_high_dynamic_range.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libarcsoft_mf_superresolution.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_mf_superresolution.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libarcsoft_sn_mtk_apu.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_sn_mtk_apu.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_super_night_raw.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libarcsoft_super_night_raw_front.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_super_night_raw_front.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libclient2slpi.notifier.so:$(TARGET_COPY_OUT_ODM)/lib64/libclient2slpi.notifier.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libcolortempmode.so:$(TARGET_COPY_OUT_ODM)/lib64/libcolortempmode.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libdisplaylog.so:$(TARGET_COPY_OUT_ODM)/lib64/libdisplaylog.so \
@@ -126,12 +576,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libmiSensorCtrl.so:$(TARGET_COPY_OUT_ODM)/lib64/libmiSensorCtrl.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libmiXmlParser.so:$(TARGET_COPY_OUT_ODM)/lib64/libmiXmlParser.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libmi_dspp.so:$(TARGET_COPY_OUT_ODM)/lib64/libmi_dspp.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libmiai_deblur.so:$(TARGET_COPY_OUT_ODM)/lib64/libmiai_deblur.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libmialgo_aio_seg.so:$(TARGET_COPY_OUT_ODM)/lib64/libmialgo_aio_seg.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libmialgo_depth.so:$(TARGET_COPY_OUT_ODM)/lib64/libmialgo_depth.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libmialgo_ie_capture.so:$(TARGET_COPY_OUT_ODM)/lib64/libmialgo_ie_capture.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libmialgo_utils.so:$(TARGET_COPY_OUT_ODM)/lib64/libmialgo_utils.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libmiphone_capture_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libmiphone_capture_bokeh.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libmiphone_capture_depth.so:$(TARGET_COPY_OUT_ODM)/lib64/libmiphone_capture_depth.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libomp.so:$(TARGET_COPY_OUT_ODM)/lib64/libomp.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libpaperMode.so:$(TARGET_COPY_OUT_ODM)/lib64/libpaperMode.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/librhytheyecare.so:$(TARGET_COPY_OUT_ODM)/lib64/librhytheyecare.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libsdr2hdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsdr2hdr.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libsre.so:$(TARGET_COPY_OUT_ODM)/lib64/libsre.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libtruetone.so:$(TARGET_COPY_OUT_ODM)/lib64/libtruetone.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libvideomode.so:$(TARGET_COPY_OUT_ODM)/lib64/libvideomode.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/temp/mt6897/libmtkcam_metadata.so:$(TARGET_COPY_OUT_ODM)/lib64/temp/mt6897/libmtkcam_metadata.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
@@ -170,6 +629,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/hw/dolbycodec2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/dolbycodec2 \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897 \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/hw/mt6897/arm.mali.platform-service.mediatek.mt6897:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/arm.mali.platform-service.mediatek.mt6897 \
+    vendor/xiaomi/duchamp/proprietary/vendor/bin/hw/mt6897/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/camerahalserver \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
@@ -317,6 +777,28 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audiodata.db:$(TARGET_COPY_OUT_VENDOR)/etc/audiodata.db \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/breakwhiteapplist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/breakwhiteapplist.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_class_all.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_all.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_class_human.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_human.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_classify.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_classify.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_detect_1st.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_detect_1st.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_detect_2nd.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_detect_2nd.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_detect_3rd.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_detect_3rd.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_saliency.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_saliency.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_track_backbone.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_track_backbone.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_track_head.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_track_head.dla \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/beauty/libTrueSight.so:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty/libTrueSight.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokehParams.json \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.golden \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/gma_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gma_custom.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/ldc/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/libalLDC.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_c1b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_c1b.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_c1w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_c1w.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f3b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f3b.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f3w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f3w.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f4b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f4b.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f4w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f4w.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f5b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5b.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f5w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5w.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/command.csv:$(TARGET_COPY_OUT_VENDOR)/etc/command.csv \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
@@ -371,6 +853,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/arm.mali.platform-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/arm.mali.platform-mediatek.rc \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
@@ -463,6 +946,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_cfg_group_duchamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_duchamp.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_cfg_group_duchamp_nowater.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_duchamp_nowater.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_firmware_duchamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_duchamp.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/lib3a.ccu_dummy:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu_dummy \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/mali_csffw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/mt6635_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_coeff.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/mt6635_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_patch.bin \
@@ -486,6 +971,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/c2.dolby.hevc.dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.hevc.dec.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/c2.dolby.hevc.sec.dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.hevc.sec.dec.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/c2.dolby.store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.store.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/com.fingerprints.extension3-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension3-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
@@ -502,9 +988,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/libmbrainImpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libmbrainImpl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/android.hardware.camera.provider@2.6-impl-mediatek.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/android.hardware.graphics.allocator-V2-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/android.hardware.graphics.allocator-V2-mediatek.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/mapper.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/mapper.mediatek.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mt6897/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vulkan.mali.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/mtkflp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mtkflp.default.so \
@@ -513,29 +1003,53 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.audio-impl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms_aidl@1.0-impl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.gnss-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.gnss-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.gnss.batching-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.gnss.batching-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower-aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mtkpower-aidl-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.bgservice@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.bgservice@1.0-impl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/lib3a.ae.pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.pipe.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/lib3a.custom.shading.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.custom.shading.flow.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libAF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAF.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libBasicModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBasicModule.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libDecoderProcessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDecoderProcessor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libHISCppAlgos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHISCppAlgos.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libMiMotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMiMotion.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libMiVideoFilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMiVideoFilter.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNoFpsActor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libXMFaceFocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libXMFaceFocus.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/lib_power_applist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_power_applist.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaaa_aaautil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_aaautil.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaaa_afassist_V2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_afassist_V2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaaa_afassistctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_afassistctrl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaaa_gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_gma.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaal_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_sec.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadpcmdec_mtk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaibld.nn6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibld.nn6.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaimemc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaimemc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaispq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaispq.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libalacdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalacdec_mtk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libalgobaseutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgobaseutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libappgamepq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappgamepq.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libapu_mdw_batch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw_batch.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libarcsoft_super_night_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_detection.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
@@ -560,8 +1074,26 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcam.hal3a.custom.ae.HDRStateEvaluator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.custom.ae.HDRStateEvaluator.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcam.zoomoverridemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.zoomoverridemgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.WarpMapResizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.WarpMapResizer.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.dngop.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fdft.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.hdr10p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.hdr10p.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.sat.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.utility.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.vsdofUtil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsdofUtil.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.warp.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcameraloadcalibrationfiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameraloadcalibrationfiles.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcameraplatforminfoxiaomi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameraplatforminfoxiaomi.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamlog.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcmdl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcmdl_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl_ndk.mtk.vndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcodec2_fsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_fsr.so \
@@ -579,19 +1111,33 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcodec2_vpp_mi_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_mi_plugin.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_qt_plugin.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_rs_plugin.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.containerutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.containerutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.debug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.debug.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.eventcallback.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.grallocutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.metadatautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.metadatautils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.mizone.cpupolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.mizone.cpupolicy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.mizone.decoupleutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.mizone.decoupleutil.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.mizone.postprocinterface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.mizone.postprocinterface.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.mizone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.mizone.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcom.xiaomi.pluginutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.pluginutils.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomposer_ext.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libconnfem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconnfem.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeccfg.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdeflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeflicker.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdfintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdfintf.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdisplayfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeature.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdisplayfeatureservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeatureservice.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbpreg.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyottcameracontrol.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libdre.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdre.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libeglcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeglcore.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libfeature.hdr10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.hdr10.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libfeaturepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeaturepolicy.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfgauge_gm30.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libforkexecwrap.so \
@@ -606,26 +1152,63 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libgwsdv2-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgwsdv2-ril.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libgwsdv3-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgwsdv3-ril.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrvideo.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libheichal.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhfmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanager.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhfmanagerwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanagerwrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhis_face_tracking.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhis_face_tracking.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhis_motion_tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhis_motion_tracker.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libimage_io.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_io.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpegdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegdecoder.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpegencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmbrainSDKv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmbrainSDKv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmiSAT.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiSAT.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmiSATTranslate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiSATTranslate.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmialgo_ai_vision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ai_vision.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmialgo_aio_seg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_aio_seg.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_sd.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmialgo_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmialgo_video_seg_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_video_seg_depth.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmialgoenginecustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoenginecustom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmibokeh_mt6873.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_mt6873.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmicamera_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmicamera_adapter.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmicamjson.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmicamjson.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmiphone_capture_bokeh_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_capture_bokeh_mono.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmiphone_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_bokeh.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmiphone_preview_bokeh_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_bokeh_mono.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmiphone_preview_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_depth.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmispowerop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmispowerop.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmp3dec_mtk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsbc_mtk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtk-fusion-ril-prop-vsim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-fusion-ril-prop-vsim.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_custom.atms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom.atms.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_custom.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom.utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_custom_feature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom_feature.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_custom_mihdrselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custom_mihdrselector.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_fdWarpConvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdWarpConvert.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_fdsan.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdsan.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_fdsan_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdsan_wrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_grallocutils_aidlv1helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_grallocutils_aidlv1helper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcam_perfctrl_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_perfctrl_wrapper.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfig.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfigutils.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkhardware_legacy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkisp_metadata_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata_v2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkisp_metadata_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata_v3.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtklimiter_vendor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtkmipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkmipc-ril.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmtknetcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetcap.so \
@@ -654,6 +1237,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmvpu_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmvpu_runtime_builtin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_builtin.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmvpu_runtime_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_pub.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmvpu_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_wrapper.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmvpuop_mtk_cv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop_mtk_cv.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmvpuop_mtk_nn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop_mtk_nn.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libnotifyaudiohal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnotifyaudiohal.so \
@@ -673,6 +1257,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libpqxmlflagparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqxmlflagparser.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libpqxmlparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqxmlparser.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libratconfig.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/librelight_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librelight_only.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/librfs_warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librfs_warp.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/librilfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilfusion.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librt_extamp_intf.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libsilkybrightnesscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsilkybrightnesscore.so \
@@ -684,8 +1271,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libteecli.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteecli.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libultrahdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrahdr.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libvia-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvia-ril.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libviamipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libviamipc-ril.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libvideoBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoBokeh.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libvow_ap_test_aa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvow_ap_test_aa.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libvow_ap_test_dd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvow_ap_test_dd.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libvow_ap_test_ha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvow_ap_test_ha.so \
@@ -703,35 +1292,389 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxlog.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/arm.graphics-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/arm.graphics-V4-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/arm.mali.platform-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/arm.mali.platform-V2-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampgc16b3front_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampgc16b3front_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampgc16b3front_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampgc16b3front_mipi_raw_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov08d10ultra_mipi_raw_2_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov08d10ultra_mipi_raw_2_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov08d10ultra_mipi_raw_2_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov08d10ultra_mipi_raw_2_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov08d10ultra_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov08d10ultra_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov08d10ultra_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov08d10ultra_mipi_raw_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov16a1qfront_mipi_raw_2_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov16a1qfront_mipi_raw_2_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov16a1qfront_mipi_raw_2_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov16a1qfront_mipi_raw_2_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov16a1qfront_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov16a1qfront_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov16a1qfront_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov16a1qfront_mipi_raw_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov64b40wide_mipi_raw_2_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov64b40wide_mipi_raw_2_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov64b40wide_mipi_raw_2_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov64b40wide_mipi_raw_2_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov64b40wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov64b40wide_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampov64b40wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampov64b40wide_mipi_raw_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_2_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_2_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_2_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_2_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/duchampsc202pcsmacro_mipi_raw_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.ae.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.ae.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.ae.stat.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.af.assist.models1d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.models1d.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.af.assist.models2d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.models2d.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.assist.utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.core.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.af.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.aishutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.aishutter.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.alsflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.alsflicker.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.awb.core.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.awbsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.awbsync.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.cculog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.cculog.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.custom.ae.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.ae.flow.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.custom.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.ae.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.custom.af.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.af.flow.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.custom.awb.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.awb.flow.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.custom.stt.flow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.custom.stt.flow.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.flash.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.flicker.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.log.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.sensors.color.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.sensors.flicker.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib3a.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib3a.stat.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libAIODcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libAIODcore.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libAIOTcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libAIOTcore.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libAITrackingAFMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libAITrackingAFMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libDBAccessor_ISP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libDBAccessor_ISP.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libDR.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libMtkMediaController.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libMtkMediaController.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libMtkMediaController_SAL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libMtkMediaController_SAL.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libSonyIMX519PdafWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libSonyIMX519PdafWrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/lib_bsscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/lib_bsscore.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaaa_feature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_feature.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_ltm.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_ltmx.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaaa_tnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_tnc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaaa_toneutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaaa_toneutil.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaal_cust_func.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaalservice.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiawb_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_fs.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_moon.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiawb_moon_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_moon_model.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_p1ggm.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiawb_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiawb_sun.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaibc_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaibc_tuning_p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning_p2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaibc_tuning_p3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning_p3.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaibc_tuning_p4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaibc_tuning_p4.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaicapturecore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaicapturecore.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaidepth_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaidepth_tuning.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiseg_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_cache.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiseg_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_model.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiseg_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_p1ggm.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiseg_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiseg_sun.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libaiselector.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libalgo.aosp.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libalgo.aosp.log.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libapiwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libapiwrapper.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libapudcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libapudcutils.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libarm_egl_properties_sysprop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libarm_egl_properties_sysprop.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libarm_gralloc_properties_sysprop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libarm_gralloc_properties_sysprop.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libarm_mali_config_sysprops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libarm_mali_config_sysprops.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.3a_isp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.3a_isp.utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.afmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.afmgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.chdr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.feature_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.fw_me_tcy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.fw_me_tcy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.3aProvider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.3aProvider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.afassitmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.afassitmgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.cctsvr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.cctsvr.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.ctrl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.custom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.guard.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.guard.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.ircutdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.ircutdrv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.lensdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.lensdrv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.log.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.lscMgrApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.lscMgrApi.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.oisdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.oisdrv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.ozoomdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.ozoomdrv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.pdstatmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.pdstatmgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.policy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.policy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.tofdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.tofdrv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.ae.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.ae.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.ai3a_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.ai3a_v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.awb_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.awb_v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.dng.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.flash.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.flash.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.flicker.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.flicker.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.ir.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.ir.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.lsctbl.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.lsctbl.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.nvram.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.nvram.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.sensor.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.sensor.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.strobe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.strobe.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.stt_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.stt_v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.hal3a.v3.tone.mgr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.hal3a.v3.tone.mgr.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.SwTopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.SwTopCtrlMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.TopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.TopCtrlMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.TuningDataProvider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.TuningDataProvider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.TuningDataProviderFactory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.TuningDataProviderFactory.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.imp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.imp.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.plugin.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halisp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halisp.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halsensor.hwintegration.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.halsensor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.isptuning.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.isptuning.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.peripheralcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.peripheralcontroller.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.sensor_mode_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.sensor_mode_helper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.sensor_mode_helper_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.sensor_mode_helper_custom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.tuningcachemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.tuningcachemgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.utils.sensorprovider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam.vhdr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam_ipc_hal3a_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam_ipc_hal3a_client.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcam_ipc_nvbuf_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcam_ipc_nvbuf_client.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.BSSwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.BSSwrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.InlineCompGyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.InlineCompGyro.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.Mfbllwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.Mfbllwrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.aibc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.aibc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.aibcwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.aibcwrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.aics.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.aics.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.ainr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.ainr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.ais2.bss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.ais2.bss.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.ais2.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.ais2.mfnr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.ais2.mstm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.ais2.mstm.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.ais2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.ais2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.bss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.bss.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.c3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.c3d.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.cac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.cac.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.eis.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.fsc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.fus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.fus.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.gyro.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.lmv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.lsc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.mcnr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.mfnr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.n3d.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.platform2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.rotate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.rotate.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.tsfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.tsfs.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.util1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.util1.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.util2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.util2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.vaics.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.vaics.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.vaidepth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.vaidepth.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamalgo.vsf.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_buf_mgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_buf_mgr_open.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_buf_mgr_open.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_mgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamera.custom.af_assist_pdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.custom.af_assist_pdp.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.customae.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcamera.customflk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcamera.customflk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera.3a.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera.isp.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera.sensors.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.camera_calibration.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera_calibration.core.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.camera_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.camera_exif.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.cfg_setting.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.cfg_setting.core.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.eis.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.flashlight.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.imgsensor.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.imgsensor.core.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.lens.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.plugin.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom_camera_db_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom_camera_db_ext.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libdpframework.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libeffecthal.base.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfacerelight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfacerelight.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.aiseg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.aiseg.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.face.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.fwmvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.fwmvp.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.mcnr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.stereo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.stereo.platform.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.stereo.provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.vsdof.3a_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.3a_info_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.vsdof.fd_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.fd_info_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.hal.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.vsdof.nvram_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.nvram_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature.vsdof.ot_info_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature.vsdof.ot_info_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature_eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature_eis.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature_fsc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeature_vrp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeature_vrp.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeatureiodrv_mem.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfeaturepolicy_dbhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfeaturepolicy_dbhandler.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgstream-custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgstream-custom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgstream-drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgstream-drv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgstream-guard.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgstream-guard.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_adl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_adl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_cmt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_cmt.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_custom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_daemon.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_dip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_dip.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_drvcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_drvcommon.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_gce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_gce.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_main.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_main.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_me.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_me.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_pqdip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_pqdip.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_sensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_sensor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_system.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_taskhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_taskhandler.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_tdrhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_tdrhal.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_tile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_tile.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_traw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_traw.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libimgsys_wpe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libimgsys_wpe.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libispfeature_mtkcam.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libispfeature_mtkcam.v4l2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libispinterpreter_mtkcam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libispinterpreter_mtkcam.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/liblpnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/liblpnr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmfllcore.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmgr3a.adapt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmgr3a.adapt.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmmagent.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmml.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmmlpqImpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmmlpqImpl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmnl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtk_drvb.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.atmseventmgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.debugwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.debugwrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.eventcallback.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.capture.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.depthmap.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.p2g.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.p2g.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.streaming.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.featurepipe.vsdof.wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.featurepipe.vsdof.wrapper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.logicalcaminfoprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.logicalcaminfoprovider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.logicalmodule.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam.ndd.limit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam.ndd.limit.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_aicolor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aicolor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_aie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aie.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_android_zslprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_android_zslprocessor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_aov_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov_cust.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_aov_plat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov_plat.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_aov_sys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_aov_sys.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_buffer_flush.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_buffer_flush.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_c2psperfctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_c2psperfctrl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ca.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_calibration_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_camcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camcontroller.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_camcoordinator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camcoordinator.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_camctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camctrl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_camdeliver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camdeliver.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_camsys_sensor_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_camsys_sensor_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_coredev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_coredev.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_custom.calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom.calibration_convertor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_custom.metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom.metadata.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_custom.policy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom.policy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_custom_sampleselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom_sampleselector.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_custom_zsdhdrselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custom_zsdhdrselector.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_custzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_custzone.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_debugutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_detectnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_detectnode.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_devicemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_devicemgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_diputils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_dma_map.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_dma_map.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_dpe_sp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_dpe_sp.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_exif.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_externalisploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_externalisploader.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_faceResultHandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_faceResultHandler.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_grallocutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal3a_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal3a_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_common.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_device.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aidl_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aidl_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_app_cbadaptor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_common.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_device.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_android_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_android_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_aov.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_app.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_app_cbadaptor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_device.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_devicesessionpolicy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_featurepolicy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_core_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_core_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_custom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_custom_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_custom_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_common.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_device.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_provider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hal_hidl_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_halisp_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_halisp_custom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.jpegnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwnode.jpegnode.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwnode.p2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwnode.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hwutils_android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwutils_android.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_hwutils_poweronoffcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_hwutils_poweronoffcontroller.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_imgbuf_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_imgbuf_v2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_core.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_common_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_common_client.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_common_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_common_server.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_client.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ipc_wrapper_mtk_server.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_jsonconvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_jsonconvertor.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_jsondata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_jsondata.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_mapping_mgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_metaconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_metaconv.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_metadata.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_metastore.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_modulefactory_custom.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_modulefactory_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_modulehelper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_p1node.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_p1node.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_packutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_packutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_perfctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_perfctrl.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pip.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipeline.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipeline_fbm.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinemodel_capture.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinemodel_session.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinemodel_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy-security.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy-smvr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipelinepolicy_factory.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_pipemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_pipemgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_postprocprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_postprocprovider.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_preprocnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_preprocnode.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_prerelease.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_proc.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_request_requlator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_request_requlator.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_resourcedecision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_resourcedecision.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_salmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_salmgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_sensorcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_sensorcontrol.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_simager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_simager.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_smvr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_stdutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_streamutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_synchelper.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_sysutils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_taskmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_taskmgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.core.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.customer.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.customzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.customzone.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.mtk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_thirdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_thirdparty.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_tuning_utils.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_ulog.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcam_zsl_customselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcam_zsl_customselector.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libmtkcm_ipc_dummy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libmtkcm_ipc_dummy.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuralnetworks_sl_driver_mtk_prebuilt.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_adapter_mgvi.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libneuron_runtime.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_runtime.7.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libneuron_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_runtime.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libneuron_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libneuron_wrapper.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libnir_neon_driver.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpda_usdriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpda_usdriver.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpq_cust_base.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpq_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpq_sec.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpqconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpqconfig.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpqparamparser.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/mtk000_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mtk000_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/mtk000_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/mtk000_mipi_raw_tuning.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/sensors.touch.detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.detect.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdlbvol.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswgamedap.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswspatializer.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswvqe.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/temp/mt6897/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/temp/mt6897/libmtkcam_ulog.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.framework.mtksf_ext-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.framework.mtksf_ext-V2-ndk.so \
@@ -744,6 +1687,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.aovservice-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.aovservice-V2-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice-V1-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.security@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.gnss-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.gnss-V1-ndk.so \
@@ -804,8 +1759,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V6-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq_aidl-V6-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.bgservice@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.dtool1-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.dtool1-V1-ndk.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so \
@@ -854,7 +1812,9 @@ PRODUCT_PACKAGES += \
     manifest_allocator \
     manifest_apuware_apusys_aidl \
     manifest_apuware_utils_aidl \
+    manifest_cameraprovider \
     manifest_hwcomposer \
+    manifest_isphal \
     manifest_mbrain \
     manifest_media_c2_V1_2_default \
     manifest_mmlpq \
@@ -863,44 +1823,438 @@ PRODUCT_PACKAGES += \
     mtkpower_applist-mtk-default \
     vendor.dolby.hardware.dms \
     vendor.dolby.media.c2@1.0-service \
+    vendor.xiaomi.hardware.bgservice@1.0-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator-V2-service-mediatek_android.hardware.graphics_symlink \
-    arm.mali.platform-service.mediatek_arm.mali.platform-service_symlink \
+    ParameterDB_ae_ParameterDB_ae_symlink \
+    ParameterDB_af_ParameterDB_af_symlink \
+    ParameterDB_awb_ParameterDB_awb_symlink \
+    ParameterDB_awbsync_ParameterDB_awbsync_symlink \
+    ParameterDB_feature_ParameterDB_feature_symlink \
+    ParameterDB_flash_ParameterDB_flash_symlink \
+    ParameterDB_flashcali_ParameterDB_flashcali_symlink \
+    ParameterDB_ParameterDB_symlink \
+    sw_top_control_data_sw_top_control_data_symlink \
+    top_control_data_top_control_data_symlink \
+    ParameterDB_pd_ParameterDB_pd_symlink \
+    ParameterDB_pipeline_ParameterDB_pipeline_symlink \
+    ParameterDB_tone_ParameterDB_tone_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_mapping_ISP_mapping_symlink \
+    ISP_param_ISP_param_symlink \
+    ISP_info_ISP_info_symlink \
+    ISP_info_ISP_info_symlink \
+    libmtkcam_metadata_libmtkcam_metadata_symlink64 \
+    android.hardware.graphics.allocator-V2-service-mediatek_android.hardware.graphics_symlink64 \
+    arm.mali.platform-service.mediatek_arm.mali.platform-service_symlink64 \
+    camerahalserver_camerahalserver_symlink64 \
     libGLES_mali_libGLES_mali_symlink64 \
     audio.primary.mediatek_audio.primary.mt6897_symlink64 \
     audio.r_submix.mediatek_audio.r_submix.mt6897_symlink64 \
+    android.hardware.camera.provider@2.6-impl-mediatek_android.hardware.camera.provider@2.6-impl-mediatek_symlink64 \
     android.hardware.graphics.allocator-V2-mediatek_android.hardware.graphics.allocator-V2-mediatek_symlink64 \
     android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink64 \
     mapper.mediatek_mapper.mediatek_symlink64 \
+    vendor.mediatek.hardware.camera.atms@1.0-impl_vendor.mediatek.hardware.camera.atms@1.0-impl_symlink64 \
+    vendor.mediatek.hardware.camera.bgservice@1.1-impl_vendor.mediatek.hardware.camera.bgservice@1.1-impl_symlink64 \
+    vendor.mediatek.hardware.camera.isphal@1.1-impl_vendor.mediatek.hardware.camera.isphal@1.1-impl_symlink64 \
     vendor.mediatek.hardware.pq_aidl-impl_vendor.mediatek.hardware.pq_aidl-impl_symlink64 \
     vulkan.mali_vulkan.mali_symlink64 \
     sensors.mediatek.V2.0_sensors.mt6897_symlink64 \
     arm.graphics-V4-ndk_arm.graphics-V4-ndk_symlink64 \
     arm.mali.platform-V2-ndk_arm.mali.platform-V2-ndk_symlink64 \
+    duchampgc16b3front_mipi_raw_IdxMgr_duchampgc16b3front_mipi_raw_IdxMgr_symlink64 \
+    duchampgc16b3front_mipi_raw_tuning_duchampgc16b3front_mipi_raw_tuning_symlink64 \
+    duchampov08d10ultra_mipi_raw_2_IdxMgr_duchampov08d10ultra_mipi_raw_2_IdxMgr_symlink64 \
+    duchampov08d10ultra_mipi_raw_2_tuning_duchampov08d10ultra_mipi_raw_2_tuning_symlink64 \
+    duchampov08d10ultra_mipi_raw_IdxMgr_duchampov08d10ultra_mipi_raw_IdxMgr_symlink64 \
+    duchampov08d10ultra_mipi_raw_tuning_duchampov08d10ultra_mipi_raw_tuning_symlink64 \
+    duchampov16a1qfront_mipi_raw_2_IdxMgr_duchampov16a1qfront_mipi_raw_2_IdxMgr_symlink64 \
+    duchampov16a1qfront_mipi_raw_2_tuning_duchampov16a1qfront_mipi_raw_2_tuning_symlink64 \
+    duchampov16a1qfront_mipi_raw_IdxMgr_duchampov16a1qfront_mipi_raw_IdxMgr_symlink64 \
+    duchampov16a1qfront_mipi_raw_tuning_duchampov16a1qfront_mipi_raw_tuning_symlink64 \
+    duchampov64b40wide_mipi_raw_2_IdxMgr_duchampov64b40wide_mipi_raw_2_IdxMgr_symlink64 \
+    duchampov64b40wide_mipi_raw_2_tuning_duchampov64b40wide_mipi_raw_2_tuning_symlink64 \
+    duchampov64b40wide_mipi_raw_IdxMgr_duchampov64b40wide_mipi_raw_IdxMgr_symlink64 \
+    duchampov64b40wide_mipi_raw_tuning_duchampov64b40wide_mipi_raw_tuning_symlink64 \
+    duchampsc202pcsmacro_mipi_raw_2_IdxMgr_duchampsc202pcsmacro_mipi_raw_2_IdxMgr_symlink64 \
+    duchampsc202pcsmacro_mipi_raw_2_tuning_duchampsc202pcsmacro_mipi_raw_2_tuning_symlink64 \
+    duchampsc202pcsmacro_mipi_raw_IdxMgr_duchampsc202pcsmacro_mipi_raw_IdxMgr_symlink64 \
+    duchampsc202pcsmacro_mipi_raw_tuning_duchampsc202pcsmacro_mipi_raw_tuning_symlink64 \
+    lib3a.ae_lib3a.ae_symlink64 \
+    lib3a.ae.stat_lib3a.ae.stat_symlink64 \
+    lib3a.af.assist.models1d_lib3a.af.assist.models1d_symlink64 \
+    lib3a.af.assist.models2d_lib3a.af.assist.models2d_symlink64 \
+    lib3a.af.assist_lib3a.af.assist_symlink64 \
+    lib3a.af.assist.utils_lib3a.af.assist.utils_symlink64 \
+    lib3a.af.core_lib3a.af.core_symlink64 \
+    lib3a.af_lib3a.af_symlink64 \
+    lib3a.aishutter_lib3a.aishutter_symlink64 \
+    lib3a.alsflicker_lib3a.alsflicker_symlink64 \
+    lib3a.awb.core_lib3a.awb.core_symlink64 \
+    lib3a.awbsync_lib3a.awbsync_symlink64 \
+    lib3a.cculog_lib3a.cculog_symlink64 \
+    lib3a.custom.ae.flow_lib3a.custom.ae.flow_symlink64 \
+    lib3a.custom.ae_lib3a.custom.ae_symlink64 \
+    lib3a.custom.af.flow_lib3a.custom.af.flow_symlink64 \
+    lib3a.custom.awb.flow_lib3a.custom.awb.flow_symlink64 \
+    lib3a.custom.stt.flow_lib3a.custom.stt.flow_symlink64 \
+    lib3a.flash_lib3a.flash_symlink64 \
+    lib3a.flicker_lib3a.flicker_symlink64 \
+    lib3a.log_lib3a.log_symlink64 \
+    lib3a.sensors.color_lib3a.sensors.color_symlink64 \
+    lib3a.sensors.flicker_lib3a.sensors.flicker_symlink64 \
+    lib3a.stat_lib3a.stat_symlink64 \
+    libAIODcore_libAIODcore_symlink64 \
+    libAIOTcore_libAIOTcore_symlink64 \
+    libAITrackingAFMgr_libAITrackingAFMgr_symlink64 \
+    libDBAccessor_ISP_libDBAccessor_ISP_symlink64 \
     libDR_libDR_symlink64 \
+    libMtkMediaController_libMtkMediaController_symlink64 \
+    libMtkMediaController_SAL_libMtkMediaController_SAL_symlink64 \
+    libSonyIMX519PdafWrapper_libSonyIMX519PdafWrapper_symlink64 \
+    lib_bsscore_lib_bsscore_symlink64 \
+    libaaa_feature_libaaa_feature_symlink64 \
+    libaaa_ltm_libaaa_ltm_symlink64 \
+    libaaa_ltmx_libaaa_ltmx_symlink64 \
+    libaaa_tnc_libaaa_tnc_symlink64 \
+    libaaa_toneutil_libaaa_toneutil_symlink64 \
+    libaal_cust_func_libaal_cust_func_symlink64 \
     libaalservice_libaalservice_symlink64 \
+    libaiawb_fs_libaiawb_fs_symlink64 \
+    libaiawb_moon_libaiawb_moon_symlink64 \
+    libaiawb_moon_model_libaiawb_moon_model_symlink64 \
+    libaiawb_p1ggm_libaiawb_p1ggm_symlink64 \
+    libaiawb_sun_libaiawb_sun_symlink64 \
+    libaibc_tuning_libaibc_tuning_symlink64 \
+    libaibc_tuning_p2_libaibc_tuning_p2_symlink64 \
+    libaibc_tuning_p3_libaibc_tuning_p3_symlink64 \
+    libaibc_tuning_p4_libaibc_tuning_p4_symlink64 \
+    libaicapturecore_libaicapturecore_symlink64 \
+    libaidepth_tuning_libaidepth_tuning_symlink64 \
+    libaiseg_cache_libaiseg_cache_symlink64 \
+    libaiseg_model_libaiseg_model_symlink64 \
+    libaiseg_p1ggm_libaiseg_p1ggm_symlink64 \
+    libaiseg_sun_libaiseg_sun_symlink64 \
     libaiselector_libaiselector_symlink64 \
+    libalgo.aosp.log_libalgo.aosp.log_symlink64 \
+    libapiwrapper_libapiwrapper_symlink64 \
     libapudcutils_libapudcutils_symlink64 \
     libarm_egl_properties_sysprop_libarm_egl_properties_sysprop_symlink64 \
     libarm_gralloc_properties_sysprop_libarm_gralloc_properties_sysprop_symlink64 \
     libarm_mali_config_sysprops_libarm_mali_config_sysprops_symlink64 \
+    libcam.3a_isp.utils_libcam.3a_isp.utils_symlink64 \
+    libcam.afmgr_libcam.afmgr_symlink64 \
+    libcam.chdr_libcam.chdr_symlink64 \
+    libcam.feature_utils_libcam.feature_utils_symlink64 \
+    libcam.fw_me_tcy_libcam.fw_me_tcy_symlink64 \
+    libcam.hal3a.3aProvider_libcam.hal3a.3aProvider_symlink64 \
+    libcam.hal3a.afassitmgr_libcam.hal3a.afassitmgr_symlink64 \
+    libcam.hal3a.cctsvr.v4l2_libcam.hal3a.cctsvr.v4l2_symlink64 \
+    libcam.hal3a.ctrl_libcam.hal3a.ctrl_symlink64 \
+    libcam.hal3a.custom_libcam.hal3a.custom_symlink64 \
+    libcam.hal3a.guard_libcam.hal3a.guard_symlink64 \
+    libcam.hal3a.ircutdrv_libcam.hal3a.ircutdrv_symlink64 \
+    libcam.hal3a.lensdrv_libcam.hal3a.lensdrv_symlink64 \
+    libcam.hal3a.log_libcam.hal3a.log_symlink64 \
+    libcam.hal3a.lscMgrApi_libcam.hal3a.lscMgrApi_symlink64 \
+    libcam.hal3a.oisdrv_libcam.hal3a.oisdrv_symlink64 \
+    libcam.hal3a.ozoomdrv_libcam.hal3a.ozoomdrv_symlink64 \
+    libcam.hal3a.pdstatmgr_libcam.hal3a.pdstatmgr_symlink64 \
+    libcam.hal3a.policy_libcam.hal3a.policy_symlink64 \
+    libcam.hal3a_libcam.hal3a_symlink64 \
+    libcam.hal3a.tofdrv_libcam.hal3a.tofdrv_symlink64 \
+    libcam.hal3a.utils_libcam.hal3a.utils_symlink64 \
+    libcam.hal3a.v3.ae.v4l2_libcam.hal3a.v3.ae.v4l2_symlink64 \
+    libcam.hal3a.v3.ai3a_v4l2_libcam.hal3a.v3.ai3a_v4l2_symlink64 \
+    libcam.hal3a.v3.awb_v4l2_libcam.hal3a.v3.awb_v4l2_symlink64 \
+    libcam.hal3a.v3.dng_libcam.hal3a.v3.dng_symlink64 \
+    libcam.hal3a.v3.flash.v4l2_libcam.hal3a.v3.flash.v4l2_symlink64 \
+    libcam.hal3a.v3.flicker.v4l2_libcam.hal3a.v3.flicker.v4l2_symlink64 \
+    libcam.hal3a.v3.ir.v4l2_libcam.hal3a.v3.ir.v4l2_symlink64 \
+    libcam.hal3a.v3.lsctbl.v4l2_libcam.hal3a.v3.lsctbl.v4l2_symlink64 \
+    libcam.hal3a.v3.nvram.v4l2_libcam.hal3a.v3.nvram.v4l2_symlink64 \
+    libcam.hal3a.v3.sensor.v4l2_libcam.hal3a.v3.sensor.v4l2_symlink64 \
+    libcam.hal3a.v3.strobe_libcam.hal3a.v3.strobe_symlink64 \
+    libcam.hal3a.v3.stt_v4l2_libcam.hal3a.v3.stt_v4l2_symlink64 \
+    libcam.hal3a.v3.tone.mgr.v4l2_libcam.hal3a.v3.tone.mgr.v4l2_symlink64 \
+    libcam.halisp.SwTopCtrlMgr_libcam.halisp.SwTopCtrlMgr_symlink64 \
+    libcam.halisp.TopCtrlMgr_libcam.halisp.TopCtrlMgr_symlink64 \
+    libcam.halisp.TuningDataProvider_libcam.halisp.TuningDataProvider_symlink64 \
+    libcam.halisp.TuningDataProviderFactory_libcam.halisp.TuningDataProviderFactory_symlink64 \
+    libcam.halisp.imp.v4l2_libcam.halisp.imp.v4l2_symlink64 \
+    libcam.halisp.plugin_libcam.halisp.plugin_symlink64 \
+    libcam.halisp.utils_libcam.halisp.utils_symlink64 \
+    libcam.halisp.v4l2_libcam.halisp.v4l2_symlink64 \
+    libcam.halsensor.hwintegration_libcam.halsensor.hwintegration_symlink64 \
+    libcam.halsensor_libcam.halsensor_symlink64 \
+    libcam.isptuning.v4l2_libcam.isptuning.v4l2_symlink64 \
+    libcam.peripheralcontroller_libcam.peripheralcontroller_symlink64 \
+    libcam.sensor_mode_helper_libcam.sensor_mode_helper_symlink64 \
+    libcam.sensor_mode_helper_custom_libcam.sensor_mode_helper_custom_symlink64 \
+    libcam.tuningcachemgr_libcam.tuningcachemgr_symlink64 \
+    libcam.utils.sensorprovider_libcam.utils.sensorprovider_symlink64 \
+    libcam.vhdr_libcam.vhdr_symlink64 \
+    libcam_ipc_hal3a_client_libcam_ipc_hal3a_client_symlink64 \
+    libcam_ipc_nvbuf_client_libcam_ipc_nvbuf_client_symlink64 \
+    libcamalgo.BSSwrapper_libcamalgo.BSSwrapper_symlink64 \
+    libcamalgo.InlineCompGyro_libcamalgo.InlineCompGyro_symlink64 \
+    libcamalgo.Mfbllwrapper_libcamalgo.Mfbllwrapper_symlink64 \
+    libcamalgo.aibc_libcamalgo.aibc_symlink64 \
+    libcamalgo.aibcwrapper_libcamalgo.aibcwrapper_symlink64 \
+    libcamalgo.aics_libcamalgo.aics_symlink64 \
+    libcamalgo.ainr_libcamalgo.ainr_symlink64 \
+    libcamalgo.ais2.bss_libcamalgo.ais2.bss_symlink64 \
+    libcamalgo.ais2.mfnr_libcamalgo.ais2.mfnr_symlink64 \
+    libcamalgo.ais2.mstm_libcamalgo.ais2.mstm_symlink64 \
+    libcamalgo.ais2_libcamalgo.ais2_symlink64 \
+    libcamalgo.bss_libcamalgo.bss_symlink64 \
+    libcamalgo.c3d_libcamalgo.c3d_symlink64 \
+    libcamalgo.cac_libcamalgo.cac_symlink64 \
+    libcamalgo.eis_libcamalgo.eis_symlink64 \
+    libcamalgo.fsc_libcamalgo.fsc_symlink64 \
+    libcamalgo.fus_libcamalgo.fus_symlink64 \
+    libcamalgo.gyro_libcamalgo.gyro_symlink64 \
+    libcamalgo.lmv_libcamalgo.lmv_symlink64 \
+    libcamalgo.lsc_libcamalgo.lsc_symlink64 \
+    libcamalgo.mcnr_libcamalgo.mcnr_symlink64 \
+    libcamalgo.mfnr_libcamalgo.mfnr_symlink64 \
+    libcamalgo.n3d_libcamalgo.n3d_symlink64 \
+    libcamalgo.platform2_libcamalgo.platform2_symlink64 \
+    libcamalgo.rotate_libcamalgo.rotate_symlink64 \
+    libcamalgo.tsfs_libcamalgo.tsfs_symlink64 \
+    libcamalgo.util1_libcamalgo.util1_symlink64 \
+    libcamalgo.util2_libcamalgo.util2_symlink64 \
+    libcamalgo.vaics_libcamalgo.vaics_symlink64 \
+    libcamalgo.vaidepth_libcamalgo.vaidepth_symlink64 \
+    libcamalgo.vsf_libcamalgo.vsf_symlink64 \
+    libcamera.custom.af_assist_buf_mgr_libcamera.custom.af_assist_buf_mgr_symlink64 \
+    libcamera.custom.af_assist_buf_mgr_open_libcamera.custom.af_assist_buf_mgr_open_symlink64 \
+    libcamera.custom.af_assist_mgr_libcamera.custom.af_assist_mgr_symlink64 \
+    libcamera.custom.af_assist_pdp_libcamera.custom.af_assist_pdp_symlink64 \
+    libcamera.customae_libcamera.customae_symlink64 \
+    libcamera.customflk_libcamera.customflk_symlink64 \
+    libcameracustom.camera.3a_libcameracustom.camera.3a_symlink64 \
+    libcameracustom.camera.isp_libcameracustom.camera.isp_symlink64 \
+    libcameracustom.camera.sensors_libcameracustom.camera.sensors_symlink64 \
+    libcameracustom.camera_calibration.core_libcameracustom.camera_calibration.core_symlink64 \
+    libcameracustom.camera_exif_libcameracustom.camera_exif_symlink64 \
+    libcameracustom.cfg_setting.core_libcameracustom.cfg_setting.core_symlink64 \
+    libcameracustom.eis_libcameracustom.eis_symlink64 \
+    libcameracustom.flashlight_libcameracustom.flashlight_symlink64 \
+    libcameracustom.imgsensor.core_libcameracustom.imgsensor.core_symlink64 \
+    libcameracustom.lens_libcameracustom.lens_symlink64 \
+    libcameracustom.plugin_libcameracustom.plugin_symlink64 \
+    libcameracustom_libcameracustom_symlink64 \
+    libcameracustom_camera_db_ext_libcameracustom_camera_db_ext_symlink64 \
     libdpframework_libdpframework_symlink64 \
+    libeffecthal.base_libeffecthal.base_symlink64 \
+    libfacerelight_libfacerelight_symlink64 \
+    libfeature.aiseg_libfeature.aiseg_symlink64 \
+    libfeature.face_libfeature.face_symlink64 \
+    libfeature.fwmvp_libfeature.fwmvp_symlink64 \
+    libfeature.mcnr_libfeature.mcnr_symlink64 \
+    libfeature.stereo.platform_libfeature.stereo.platform_symlink64 \
+    libfeature.stereo.provider_libfeature.stereo.provider_symlink64 \
+    libfeature.vsdof.3a_info_provider_libfeature.vsdof.3a_info_provider_symlink64 \
+    libfeature.vsdof.fd_info_provider_libfeature.vsdof.fd_info_provider_symlink64 \
+    libfeature.vsdof.hal_libfeature.vsdof.hal_symlink64 \
+    libfeature.vsdof.nvram_provider_libfeature.vsdof.nvram_provider_symlink64 \
+    libfeature.vsdof.ot_info_provider_libfeature.vsdof.ot_info_provider_symlink64 \
+    libfeature_eis_libfeature_eis_symlink64 \
+    libfeature_fsc_libfeature_fsc_symlink64 \
+    libfeature_vrp_libfeature_vrp_symlink64 \
+    libfeatureiodrv_mem_libfeatureiodrv_mem_symlink64 \
+    libfeaturepolicy_dbhandler_libfeaturepolicy_dbhandler_symlink64 \
+    libimgstream-custom_libimgstream-custom_symlink64 \
+    libimgstream-drv_libimgstream-drv_symlink64 \
+    libimgstream-guard_libimgstream-guard_symlink64 \
+    libimgsys_adl_libimgsys_adl_symlink64 \
+    libimgsys_cmt_libimgsys_cmt_symlink64 \
+    libimgsys_custom_libimgsys_custom_symlink64 \
+    libimgsys_daemon_libimgsys_daemon_symlink64 \
+    libimgsys_dip_libimgsys_dip_symlink64 \
+    libimgsys_drvcommon_libimgsys_drvcommon_symlink64 \
+    libimgsys_gce_libimgsys_gce_symlink64 \
+    libimgsys_main_libimgsys_main_symlink64 \
+    libimgsys_me_libimgsys_me_symlink64 \
+    libimgsys_pqdip_libimgsys_pqdip_symlink64 \
+    libimgsys_sensor_libimgsys_sensor_symlink64 \
+    libimgsys_system_libimgsys_system_symlink64 \
+    libimgsys_taskhandler_libimgsys_taskhandler_symlink64 \
+    libimgsys_tdrhal_libimgsys_tdrhal_symlink64 \
+    libimgsys_tile_libimgsys_tile_symlink64 \
+    libimgsys_traw_libimgsys_traw_symlink64 \
+    libimgsys_utils_libimgsys_utils_symlink64 \
+    libimgsys_v4l2_libimgsys_v4l2_symlink64 \
+    libimgsys_wpe_libimgsys_wpe_symlink64 \
+    libispfeature_mtkcam.v4l2_libispfeature_mtkcam.v4l2_symlink64 \
+    libispinterpreter_mtkcam_libispinterpreter_mtkcam_symlink64 \
+    liblpnr_liblpnr_symlink64 \
+    libmfllcore_libmfllcore_symlink64 \
+    libmgr3a.adapt_libmgr3a.adapt_symlink64 \
     libmmagent_libmmagent_symlink64 \
     libmml_libmml_symlink64 \
     libmmlpqImpl_libmmlpqImpl_symlink64 \
     libmnl_libmnl_symlink64 \
     libmtk_drvb_libmtk_drvb_symlink64 \
+    libmtkcam.atmseventmgr_libmtkcam.atmseventmgr_symlink64 \
+    libmtkcam.debugwrapper_libmtkcam.debugwrapper_symlink64 \
+    libmtkcam.eventcallback_libmtkcam.eventcallback_symlink64 \
+    libmtkcam.featurepipe.capture_libmtkcam.featurepipe.capture_symlink64 \
+    libmtkcam.featurepipe.depthmap_libmtkcam.featurepipe.depthmap_symlink64 \
+    libmtkcam.featurepipe.p2g_libmtkcam.featurepipe.p2g_symlink64 \
+    libmtkcam.featurepipe.streaming_libmtkcam.featurepipe.streaming_symlink64 \
+    libmtkcam.featurepipe.vsdof.wrapper_libmtkcam.featurepipe.vsdof.wrapper_symlink64 \
+    libmtkcam.logicalcaminfoprovider_libmtkcam.logicalcaminfoprovider_symlink64 \
+    libmtkcam.logicalmodule_libmtkcam.logicalmodule_symlink64 \
+    libmtkcam.ndd.limit_libmtkcam.ndd.limit_symlink64 \
+    libmtkcam_aicolor_libmtkcam_aicolor_symlink64 \
+    libmtkcam_aie_libmtkcam_aie_symlink64 \
+    libmtkcam_android_zslprocessor_libmtkcam_android_zslprocessor_symlink64 \
+    libmtkcam_aov_libmtkcam_aov_symlink64 \
+    libmtkcam_aov_cust_libmtkcam_aov_cust_symlink64 \
+    libmtkcam_aov_plat_libmtkcam_aov_plat_symlink64 \
+    libmtkcam_aov_sys_libmtkcam_aov_sys_symlink64 \
+    libmtkcam_buffer_flush_libmtkcam_buffer_flush_symlink64 \
+    libmtkcam_c2psperfctrl_libmtkcam_c2psperfctrl_symlink64 \
+    libmtkcam_ca_libmtkcam_ca_symlink64 \
+    libmtkcam_calibration_provider_libmtkcam_calibration_provider_symlink64 \
+    libmtkcam_camcontroller_libmtkcam_camcontroller_symlink64 \
+    libmtkcam_camcoordinator_libmtkcam_camcoordinator_symlink64 \
+    libmtkcam_camctrl_libmtkcam_camctrl_symlink64 \
+    libmtkcam_camdeliver_libmtkcam_camdeliver_symlink64 \
+    libmtkcam_camsys_sensor_utils_libmtkcam_camsys_sensor_utils_symlink64 \
+    libmtkcam_coredev_libmtkcam_coredev_symlink64 \
+    libmtkcam_custom.calibration_convertor_libmtkcam_custom.calibration_convertor_symlink64 \
+    libmtkcam_custom.metadata_libmtkcam_custom.metadata_symlink64 \
+    libmtkcam_custom.policy_libmtkcam_custom.policy_symlink64 \
+    libmtkcam_custom_sampleselector_libmtkcam_custom_sampleselector_symlink64 \
+    libmtkcam_custom_zsdhdrselector_libmtkcam_custom_zsdhdrselector_symlink64 \
+    libmtkcam_custzone_libmtkcam_custzone_symlink64 \
+    libmtkcam_debugutils_libmtkcam_debugutils_symlink64 \
+    libmtkcam_detectnode_libmtkcam_detectnode_symlink64 \
+    libmtkcam_devicemgr_libmtkcam_devicemgr_symlink64 \
+    libmtkcam_diputils_libmtkcam_diputils_symlink64 \
+    libmtkcam_dma_map_libmtkcam_dma_map_symlink64 \
+    libmtkcam_dpe_sp_libmtkcam_dpe_sp_symlink64 \
+    libmtkcam_exif_libmtkcam_exif_symlink64 \
+    libmtkcam_externalisploader_libmtkcam_externalisploader_symlink64 \
+    libmtkcam_faceResultHandler_libmtkcam_faceResultHandler_symlink64 \
+    libmtkcam_grallocutils_libmtkcam_grallocutils_symlink64 \
+    libmtkcam_hal3a_provider_libmtkcam_hal3a_provider_symlink64 \
+    libmtkcam_hal_aidl_common_libmtkcam_hal_aidl_common_symlink64 \
+    libmtkcam_hal_aidl_device_libmtkcam_hal_aidl_device_symlink64 \
+    libmtkcam_hal_aidl_provider_libmtkcam_hal_aidl_provider_symlink64 \
+    libmtkcam_hal_aidl_utils_libmtkcam_hal_aidl_utils_symlink64 \
+    libmtkcam_hal_android_app_cbadaptor_libmtkcam_hal_android_app_cbadaptor_symlink64 \
+    libmtkcam_hal_android_common_libmtkcam_hal_android_common_symlink64 \
+    libmtkcam_hal_android_device_libmtkcam_hal_android_device_symlink64 \
+    libmtkcam_hal_android_provider_libmtkcam_hal_android_provider_symlink64 \
+    libmtkcam_hal_android_utils_libmtkcam_hal_android_utils_symlink64 \
+    libmtkcam_hal_aov_libmtkcam_hal_aov_symlink64 \
+    libmtkcam_hal_core_app_libmtkcam_hal_core_app_symlink64 \
+    libmtkcam_hal_core_app_cbadaptor_libmtkcam_hal_core_app_cbadaptor_symlink64 \
+    libmtkcam_hal_core_device_libmtkcam_hal_core_device_symlink64 \
+    libmtkcam_hal_core_devicesessionpolicy_libmtkcam_hal_core_devicesessionpolicy_symlink64 \
+    libmtkcam_hal_core_featurepolicy_libmtkcam_hal_core_featurepolicy_symlink64 \
+    libmtkcam_hal_core_provider_libmtkcam_hal_core_provider_symlink64 \
+    libmtkcam_hal_core_utils_libmtkcam_hal_core_utils_symlink64 \
+    libmtkcam_hal_custom_libmtkcam_hal_custom_symlink64 \
+    libmtkcam_hal_custom_provider_libmtkcam_hal_custom_provider_symlink64 \
+    libmtkcam_hal_hidl_common_libmtkcam_hal_hidl_common_symlink64 \
+    libmtkcam_hal_hidl_device_libmtkcam_hal_hidl_device_symlink64 \
+    libmtkcam_hal_hidl_provider_libmtkcam_hal_hidl_provider_symlink64 \
+    libmtkcam_hal_hidl_utils_libmtkcam_hal_hidl_utils_symlink64 \
+    libmtkcam_halisp_custom_libmtkcam_halisp_custom_symlink64 \
+    libmtkcam_hwnode.jpegnode_libmtkcam_hwnode.jpegnode_symlink64 \
+    libmtkcam_hwnode.p2_libmtkcam_hwnode.p2_symlink64 \
+    libmtkcam_hwnode_libmtkcam_hwnode_symlink64 \
+    libmtkcam_hwutils_libmtkcam_hwutils_symlink64 \
+    libmtkcam_hwutils_android_libmtkcam_hwutils_android_symlink64 \
+    libmtkcam_hwutils_poweronoffcontroller_libmtkcam_hwutils_poweronoffcontroller_symlink64 \
+    libmtkcam_imgbuf_v2_libmtkcam_imgbuf_v2_symlink64 \
+    libmtkcam_ipc_core_libmtkcam_ipc_core_symlink64 \
+    libmtkcam_ipc_wrapper_common_client_libmtkcam_ipc_wrapper_common_client_symlink64 \
+    libmtkcam_ipc_wrapper_common_server_libmtkcam_ipc_wrapper_common_server_symlink64 \
+    libmtkcam_ipc_wrapper_mtk_client_libmtkcam_ipc_wrapper_mtk_client_symlink64 \
+    libmtkcam_ipc_wrapper_mtk_server_libmtkcam_ipc_wrapper_mtk_server_symlink64 \
+    libmtkcam_jsonconvertor_libmtkcam_jsonconvertor_symlink64 \
+    libmtkcam_jsondata_libmtkcam_jsondata_symlink64 \
+    libmtkcam_mapping_mgr_libmtkcam_mapping_mgr_symlink64 \
+    libmtkcam_metaconv_libmtkcam_metaconv_symlink64 \
+    libmtkcam_metadata_libmtkcam_metadata_symlink64 \
+    libmtkcam_metastore_libmtkcam_metastore_symlink64 \
+    libmtkcam_modulefactory_custom_libmtkcam_modulefactory_custom_symlink64 \
+    libmtkcam_modulefactory_utils_libmtkcam_modulefactory_utils_symlink64 \
+    libmtkcam_modulehelper_libmtkcam_modulehelper_symlink64 \
+    libmtkcam_p1node_libmtkcam_p1node_symlink64 \
+    libmtkcam_packutils_libmtkcam_packutils_symlink64 \
+    libmtkcam_perfctrl_libmtkcam_perfctrl_symlink64 \
+    libmtkcam_pip_libmtkcam_pip_symlink64 \
+    libmtkcam_pipeline_libmtkcam_pipeline_symlink64 \
+    libmtkcam_pipeline_fbm_libmtkcam_pipeline_fbm_symlink64 \
+    libmtkcam_pipelinemodel_capture_libmtkcam_pipelinemodel_capture_symlink64 \
+    libmtkcam_pipelinemodel_session_libmtkcam_pipelinemodel_session_symlink64 \
+    libmtkcam_pipelinemodel_utils_libmtkcam_pipelinemodel_utils_symlink64 \
+    libmtkcam_pipelinepolicy-security_libmtkcam_pipelinepolicy-security_symlink64 \
+    libmtkcam_pipelinepolicy-smvr_libmtkcam_pipelinepolicy-smvr_symlink64 \
+    libmtkcam_pipelinepolicy_libmtkcam_pipelinepolicy_symlink64 \
+    libmtkcam_pipelinepolicy_factory_libmtkcam_pipelinepolicy_factory_symlink64 \
+    libmtkcam_pipemgr_libmtkcam_pipemgr_symlink64 \
+    libmtkcam_postprocprovider_libmtkcam_postprocprovider_symlink64 \
+    libmtkcam_preprocnode_libmtkcam_preprocnode_symlink64 \
+    libmtkcam_prerelease_libmtkcam_prerelease_symlink64 \
+    libmtkcam_proc_libmtkcam_proc_symlink64 \
+    libmtkcam_request_requlator_libmtkcam_request_requlator_symlink64 \
+    libmtkcam_resourcedecision_libmtkcam_resourcedecision_symlink64 \
+    libmtkcam_salmgr_libmtkcam_salmgr_symlink64 \
+    libmtkcam_sensorcontrol_libmtkcam_sensorcontrol_symlink64 \
+    libmtkcam_simager_libmtkcam_simager_symlink64 \
+    libmtkcam_smvr_libmtkcam_smvr_symlink64 \
+    libmtkcam_stdutils_libmtkcam_stdutils_symlink64 \
+    libmtkcam_streamutils_libmtkcam_streamutils_symlink64 \
+    libmtkcam_synchelper_libmtkcam_synchelper_symlink64 \
+    libmtkcam_sysutils_libmtkcam_sysutils_symlink64 \
+    libmtkcam_taskmgr_libmtkcam_taskmgr_symlink64 \
+    libmtkcam_thirdparty.core_libmtkcam_thirdparty.core_symlink64 \
+    libmtkcam_thirdparty.customer_libmtkcam_thirdparty.customer_symlink64 \
+    libmtkcam_thirdparty.customzone_libmtkcam_thirdparty.customzone_symlink64 \
+    libmtkcam_thirdparty.mtk_libmtkcam_thirdparty.mtk_symlink64 \
+    libmtkcam_thirdparty_libmtkcam_thirdparty_symlink64 \
+    libmtkcam_tuning_utils_libmtkcam_tuning_utils_symlink64 \
+    libmtkcam_ulog_libmtkcam_ulog_symlink64 \
+    libmtkcam_zsl_customselector_libmtkcam_zsl_customselector_symlink64 \
+    libmtkcm_ipc_dummy_libmtkcm_ipc_dummy_symlink64 \
     libneuralnetworks_sl_driver_mtk_prebuilt_libneuralnetworks_sl_driver_mtk_prebuilt_symlink64 \
     libneuron_adapter_mgvi_libneuron_adapter_mgvi_symlink64 \
     libneuron_runtime.7_libneuron_runtime.7_symlink64 \
     libneuron_runtime_libneuron_runtime_symlink64 \
     libneuron_wrapper_libneuron_wrapper_symlink64 \
     libnir_neon_driver_libnir_neon_driver_symlink64 \
+    libpda_usdriver_libpda_usdriver_symlink64 \
     libpq_cust_base_libpq_cust_base_symlink64 \
     libpq_sec_libpq_sec_symlink64 \
     libpqconfig_libpqconfig_symlink64 \
-    libpqparamparser_libpqparamparser_symlink64
+    libpqparamparser_libpqparamparser_symlink64 \
+    mtk000_mipi_raw_IdxMgr_mtk000_mipi_raw_IdxMgr_symlink64 \
+    mtk000_mipi_raw_tuning_mtk000_mipi_raw_tuning_symlink64 \
+    libmtkcam_ulog_libmtkcam_ulog_symlink64
