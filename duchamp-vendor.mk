@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/top_control_data.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/top_control_data.db \
     vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6897/ParameterDB_pd.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6897/ParameterDB_pd.db \
     vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6897/ParameterDB_pipeline.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6897/ParameterDB_pipeline.db \
+    vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
     vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6897/ParameterDB_tone.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6897/ParameterDB_tone.db \
     vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_mapping.db \
     vendor/xiaomi/duchamp/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_param.db \
@@ -1086,7 +1087,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.utility.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.vsdofUtil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsdofUtil.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.warp.so \
-    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcameraloadcalibrationfiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameraloadcalibrationfiles.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libcameraplatforminfoxiaomi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameraplatforminfoxiaomi.so \
@@ -1159,14 +1159,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhis_motion_tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhis_motion_tracker.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
-    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libimage_io.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_io.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
-    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpegdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegdecoder.so \
-    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libjpegencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libmbrainSDKv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmbrainSDKv.so \
@@ -1271,7 +1268,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libteecli.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteecli.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
-    vendor/xiaomi/duchamp/proprietary/vendor/lib64/libultrahdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrahdr.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libvia-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvia-ril.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libviamipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libviamipc-ril.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/libvideoBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoBokeh.so \
@@ -1674,7 +1670,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswgamedap.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswspatializer.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswvqe.so \
-    vendor/xiaomi/duchamp/proprietary/vendor/lib64/temp/mt6897/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/temp/mt6897/libmtkcam_ulog.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0-impl.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.framework.mtksf_ext-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.framework.mtksf_ext-V2-ndk.so \
@@ -1829,43 +1824,9 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice.aidl
 
 PRODUCT_PACKAGES += \
-    ParameterDB_ae_ParameterDB_ae_symlink \
-    ParameterDB_af_ParameterDB_af_symlink \
-    ParameterDB_awb_ParameterDB_awb_symlink \
-    ParameterDB_awbsync_ParameterDB_awbsync_symlink \
-    ParameterDB_feature_ParameterDB_feature_symlink \
-    ParameterDB_flash_ParameterDB_flash_symlink \
-    ParameterDB_flashcali_ParameterDB_flashcali_symlink \
-    ParameterDB_ParameterDB_symlink \
-    sw_top_control_data_sw_top_control_data_symlink \
-    top_control_data_top_control_data_symlink \
-    ParameterDB_pd_ParameterDB_pd_symlink \
-    ParameterDB_pipeline_ParameterDB_pipeline_symlink \
-    ParameterDB_tone_ParameterDB_tone_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_mapping_ISP_mapping_symlink \
-    ISP_param_ISP_param_symlink \
-    ISP_info_ISP_info_symlink \
-    ISP_info_ISP_info_symlink \
-    libmtkcam_metadata_libmtkcam_metadata_symlink64 \
-    android.hardware.graphics.allocator-V2-service-mediatek_android.hardware.graphics_symlink64 \
-    arm.mali.platform-service.mediatek_arm.mali.platform-service_symlink64 \
-    camerahalserver_camerahalserver_symlink64 \
+    android.hardware.graphics.allocator-V2-service-mediatek_android.hardware.graphics_symlink \
+    arm.mali.platform-service.mediatek_arm.mali.platform-service_symlink \
+    camerahalserver_camerahalserver_symlink \
     libGLES_mali_libGLES_mali_symlink64 \
     audio.primary.mediatek_audio.primary.mt6897_symlink64 \
     audio.r_submix.mediatek_audio.r_submix.mt6897_symlink64 \
@@ -2256,5 +2217,4 @@ PRODUCT_PACKAGES += \
     libpqconfig_libpqconfig_symlink64 \
     libpqparamparser_libpqparamparser_symlink64 \
     mtk000_mipi_raw_IdxMgr_mtk000_mipi_raw_IdxMgr_symlink64 \
-    mtk000_mipi_raw_tuning_mtk000_mipi_raw_tuning_symlink64 \
-    libmtkcam_ulog_libmtkcam_ulog_symlink64
+    mtk000_mipi_raw_tuning_mtk000_mipi_raw_tuning_symlink64

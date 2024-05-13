@@ -345,259 +345,21 @@ prebuilt_etc_xml {
 }
 
 install_symlink {
-	name: "ParameterDB_ae_ParameterDB_ae_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6897/ParameterDB_ae.db",
-}
-
-install_symlink {
-	name: "ParameterDB_af_ParameterDB_af_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6897/ParameterDB_af.db",
-}
-
-install_symlink {
-	name: "ParameterDB_awb_ParameterDB_awb_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/awb/ParameterDB_awb.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6897/ParameterDB_awb.db",
-}
-
-install_symlink {
-	name: "ParameterDB_awbsync_ParameterDB_awbsync_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/awbsync/ParameterDB_awbsync.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6897/ParameterDB_awbsync.db",
-}
-
-install_symlink {
-	name: "ParameterDB_feature_ParameterDB_feature_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6897/ParameterDB_feature.db",
-}
-
-install_symlink {
-	name: "ParameterDB_flash_ParameterDB_flash_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/flash/ParameterDB_flash.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6897/ParameterDB_flash.db",
-}
-
-install_symlink {
-	name: "ParameterDB_flashcali_ParameterDB_flashcali_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6897/ParameterDB_flashcali.db",
-}
-
-install_symlink {
-	name: "ParameterDB_ParameterDB_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/ParameterDB.db",
-}
-
-install_symlink {
-	name: "sw_top_control_data_sw_top_control_data_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/sw_top_control_data.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/sw_top_control_data.db",
-}
-
-install_symlink {
-	name: "top_control_data_top_control_data_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6897/top_control_data.db",
-}
-
-install_symlink {
-	name: "ParameterDB_pd_ParameterDB_pd_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/pd/ParameterDB_pd.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6897/ParameterDB_pd.db",
-}
-
-install_symlink {
-	name: "ParameterDB_pipeline_ParameterDB_pipeline_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/pipeline/ParameterDB_pipeline.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6897/ParameterDB_pipeline.db",
-}
-
-install_symlink {
-	name: "ParameterDB_tone_ParameterDB_tone_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6897/ParameterDB_tone.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampgc16b3front_mipi_raw/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov08d10ultra_mipi_raw_2/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov16a1qfront_mipi_raw_2/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampov64b40wide_mipi_raw_2/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_mapping_ISP_mapping_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/ISP_mapping.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/mt6897/ISP_mapping.db",
-}
-
-install_symlink {
-	name: "ISP_param_ISP_param_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/ISP_param.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/duchampsc202pcsmacro_mipi_raw_2/mt6897/ISP_param.db",
-}
-
-install_symlink {
-	name: "ISP_info_ISP_info_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6897/ISP_info.db",
-}
-
-install_symlink {
-	name: "ISP_info_ISP_info_symlink",
-	device_specific: true,
-	installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/ISP_info.db",
-	symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db",
-}
-
-install_symlink {
-	name: "libmtkcam_metadata_libmtkcam_metadata_symlink64",
-	device_specific: true,
-	installed_location: "lib64/temp/libmtkcam_metadata.so",
-	symlink_target: "/odm/lib64/temp/mt6897/libmtkcam_metadata.so",
-}
-
-install_symlink {
-	name: "android.hardware.graphics.allocator-V2-service-mediatek_android.hardware.graphics_symlink64",
+	name: "android.hardware.graphics.allocator-V2-service-mediatek_android.hardware.graphics_symlink",
 	soc_specific: true,
 	installed_location: "bin/hw/android.hardware.graphics.allocator-V2-service-mediatek",
 	symlink_target: "/vendor/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897",
 }
 
 install_symlink {
-	name: "arm.mali.platform-service.mediatek_arm.mali.platform-service_symlink64",
+	name: "arm.mali.platform-service.mediatek_arm.mali.platform-service_symlink",
 	soc_specific: true,
 	installed_location: "bin/hw/arm.mali.platform-service.mediatek",
 	symlink_target: "/vendor/bin/hw/mt6897/arm.mali.platform-service.mediatek.mt6897",
 }
 
 install_symlink {
-	name: "camerahalserver_camerahalserver_symlink64",
+	name: "camerahalserver_camerahalserver_symlink",
 	soc_specific: true,
 	installed_location: "bin/hw/camerahalserver",
 	symlink_target: "/vendor/bin/hw/mt6897/camerahalserver",
@@ -3338,12 +3100,5 @@ install_symlink {
 	soc_specific: true,
 	installed_location: "lib64/mtk000_mipi_raw_tuning.so",
 	symlink_target: "/vendor/lib64/mt6897/mtk000_mipi_raw_tuning.so",
-}
-
-install_symlink {
-	name: "libmtkcam_ulog_libmtkcam_ulog_symlink64",
-	soc_specific: true,
-	installed_location: "lib64/temp/libmtkcam_ulog.so",
-	symlink_target: "/vendor/lib64/temp/mt6897/libmtkcam_ulog.so",
 }
 
