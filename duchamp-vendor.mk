@@ -549,6 +549,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libArcNetMtk.so:$(TARGET_COPY_OUT_ODM)/lib64/libArcNetMtk.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libMiDispDevManager.so:$(TARGET_COPY_OUT_ODM)/lib64/libMiDispDevManager.so \
+    vendor/xiaomi/duchamp/proprietary/odm/lib64/libTrueSight.so:$(TARGET_COPY_OUT_ODM)/lib64/libTrueSight.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libalAILDC.so:$(TARGET_COPY_OUT_ODM)/lib64/libalAILDC.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libalAI_Seg.so:$(TARGET_COPY_OUT_ODM)/lib64/libalAI_Seg.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libalAI_Seg_CFR.so:$(TARGET_COPY_OUT_ODM)/lib64/libalAI_Seg_CFR.so \
@@ -1693,6 +1694,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.security@1.0.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
