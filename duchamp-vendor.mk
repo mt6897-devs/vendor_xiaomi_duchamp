@@ -1473,6 +1473,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.plugin.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libcameracustom_camera_db_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libcameracustom_camera_db_ext.so \
+    vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libccd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libccd.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libdpframework.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libeffecthal.base.so \
     vendor/xiaomi/duchamp/proprietary/vendor/lib64/mt6897/libfacerelight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libfacerelight.so \
@@ -2028,6 +2029,7 @@ PRODUCT_PACKAGES += \
     libcameracustom.plugin_libcameracustom.plugin_symlink64 \
     libcameracustom_libcameracustom_symlink64 \
     libcameracustom_camera_db_ext_libcameracustom_camera_db_ext_symlink64 \
+    libccd_libccd_symlink64 \
     libdpframework_libdpframework_symlink64 \
     libeffecthal.base_libeffecthal.base_symlink64 \
     libfacerelight_libfacerelight_symlink64 \

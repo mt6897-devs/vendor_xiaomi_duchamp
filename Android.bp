@@ -1759,6 +1759,13 @@ install_symlink {
 }
 
 install_symlink {
+	name: "libccd_libccd_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libccd.so",
+	symlink_target: "/vendor/lib64/mt6897/libccd.so",
+}
+
+install_symlink {
 	name: "libdpframework_libdpframework_symlink64",
 	soc_specific: true,
 	installed_location: "lib64/libdpframework.so",
