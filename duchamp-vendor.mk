@@ -593,13 +593,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libtruetone.so:$(TARGET_COPY_OUT_ODM)/lib64/libtruetone.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/libvideomode.so:$(TARGET_COPY_OUT_ODM)/lib64/libvideomode.so \
     vendor/xiaomi/duchamp/proprietary/odm/lib64/temp/mt6897/libmtkcam_metadata.so:$(TARGET_COPY_OUT_ODM)/lib64/temp/mt6897/libmtkcam_metadata.so \
+    vendor/xiaomi/duchamp/proprietary/system_ext/bin/magt:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/magt \
     vendor/xiaomi/duchamp/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/xiaomi/duchamp/proprietary/system_ext/etc/init/magt.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/magt.rc \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
+    vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libged_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libged_sys.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_adapt.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_rtp.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_socketwrapper.so \
+    vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libmagt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmagt.so \
+    vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libmagtsync.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmagtsync.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_service.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_wrapper.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtkperf_client.so \
