@@ -14,6 +14,7 @@ AB_OTA_PARTITIONS += \
     gz \
     mcf_ota \
     mcupm \
+    modem \
     mvpu_algo \
     pi_img \
     scp \
