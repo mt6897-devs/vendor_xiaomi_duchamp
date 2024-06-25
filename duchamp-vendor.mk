@@ -597,6 +597,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/init/magt.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/magt.rc \
+    vendor/xiaomi/duchamp/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libged_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libged_sys.so \
     vendor/xiaomi/duchamp/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
@@ -2520,6 +2521,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.google.android.widevine.nonupdatable \
     ImsService \
+    HotwordEnrollmentOKGoogleRISCV \
+    HotwordEnrollmentXGoogleRISCV \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -2528,6 +2531,7 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    com.android.hotwordenrollment.common.util \
     CommandService \
     android.hardware.bluetooth-service-mediatek \
     android.hardware.gatekeeper-service.mitee \
