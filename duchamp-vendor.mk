@@ -62,13 +62,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/beauty_config_in.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_in.json \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/beauty_config_ru.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/beauty_config_ru.json \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/default_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/default_param.json \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/1720888_32.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/1720888_32.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/1720888_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/1720888_64.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/2821809890_32.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/2821809890_32.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/2821809890_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/2821809890_64.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/32/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/32/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/32/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/32/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/3711416411_32.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/3711416411_32.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/3711416411_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/3711416411_64.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/64/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/64/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/kernel/64/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/kernel/64/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
@@ -206,87 +201,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_otherRear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_otherRear.json \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/Effect/effect_mode_video.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/Effect/effect_mode_video.json \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/GlobalConfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/GlobalConfig.json \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYEV3_PROC_PUPIL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_BRIGHT_EYEV3_PROC_PUPIL.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_GUIDE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_ADVANCE_GUIDE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_FRAMEBUFFER_FETCH_MALI_BLEND_ALPHA.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BOX_FILTER_2X2.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_BOX_FILTER_2X2.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_COLOR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_COLOR.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_CONTRAST_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_CONTRAST_BLUR.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACERETOUCH_LUMA_TO_ALPHA_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACERETOUCH_LUMA_TO_ALPHA_Define_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_NEED_REFINE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET_Define_USE_SPLIT_NEED_REFINE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET_Define_NEED_REFINE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_ADVANCE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_ADVANCE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_SIMPLE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_SIMPLE_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FACERETOUCH_PROCESS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FACERETOUCH_PROCESS.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FILTER.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_HESSIAN_FILTER.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_DEF_CATMULL_ROM_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_Define_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEAN_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEAN_BLUR.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MERGE_MASK.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_MERGE_MASK.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_POINT.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_SPOTLESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_SPOTLESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_TEXTURE_RETOUCH_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_TEXTURE_RETOUCH_PROCESS_Define_FRAMEBUFFER_FETCH_MALI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE_INCREMENTAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_AFFINE_INCREMENTAL.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL_Define_WARP_TO_ROI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_NORMAL_Define_WARP_TO_ROI.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2RGBAUtils.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils.bin \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
     vendor/xiaomi/duchamp/proprietary/odm/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/render/glsl/binShaders64/shader_GLPROGRAM_ADVANCE_BRIGHT_EYE.bin \
@@ -533,6 +447,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -656,7 +571,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audiodata.db:$(TARGET_COPY_OUT_VENDOR)/etc/audiodata.db \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/breakwhiteapplist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/breakwhiteapplist.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_class_all.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_all.dla \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_class_human.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_human.dla \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_classify.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_classify.dla \
@@ -679,7 +593,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f4w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f4w.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f5b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5b.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f5w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5w.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/command.csv:$(TARGET_COPY_OUT_VENDOR)/etc/command.csv \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
@@ -748,11 +661,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/mbrain-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mbrain-mtk-default.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/miteelog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/miteelog.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/mtkpower_applist-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkpower_applist-mtk-default.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
@@ -763,20 +674,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.dolbyvision.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolbyvision.media.c2@1.0-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/mbrain/mbrain_runtime_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_config.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/mbrain/mbrain_runtime_game_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_game_config.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/mbrain/mbrain_runtime_pivm_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_pivm_config.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/mbrain/mbrain_runtime_video_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_video_config.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/mbrain/mbrain_static_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_static_config.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
@@ -788,7 +695,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/smartpa_param/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_DSP.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/thermalbreakboostconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalbreakboostconfig.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/tp_kmsg_init_duchamp.sh:$(TARGET_COPY_OUT_VENDOR)/etc/tp_kmsg_init_duchamp.sh \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
@@ -851,7 +757,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
-    android.hardware.power-service-mediatek \
     c2.dolby.client \
     c2.dolby.hevc.dec \
     c2.dolby.hevc.sec.dec \
@@ -871,7 +776,6 @@ PRODUCT_PACKAGES += \
     consumerir.common \
     gps.default \
     hwcomposer.mtk_common \
-    libmbrainImpl \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
@@ -892,7 +796,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
     vendor.mediatek.hardware.gnss-impl \
     vendor.mediatek.hardware.gnss.batching-impl \
-    vendor.mediatek.hardware.mtkpower-aidl-impl \
     vendor.mediatek.hardware.nvram-impl \
     vendor.mediatek.hardware.videotelephony-impl \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
@@ -913,7 +816,6 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     libXMFaceFocus \
     lib_iir \
-    lib_power_applist \
     libaaa_aaautil \
     libaaa_afassist_V2 \
     libaaa_afassistctrl \
@@ -1097,7 +999,6 @@ PRODUCT_PACKAGES += \
     libmtkmipc-ril \
     libmtknetcap \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtkrilutils \
@@ -1146,10 +1047,6 @@ PRODUCT_PACKAGES += \
     libnvram_sec \
     libnxp_extamp_intf \
     liboemcrypto \
-    libperfctl_vendor \
-    libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
     libpqframework \
     libpqhdrmetaparser \
     libpqsharememory \
@@ -1578,8 +1475,6 @@ PRODUCT_PACKAGES += \
     libswvqe \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.dolby.hardware.dms@2.0 \
-    vendor.mediatek.framework.mtksf_ext-V2-ndk \
-    vendor.mediatek.framework.mtksf_ext-V3-ndk \
     vendor.mediatek.hardware.apuware.apusys-V2-ndk \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
     vendor.mediatek.hardware.apuware.utils@2.0 \
@@ -1606,14 +1501,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gnss-V1-ndk \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
     vendor.mediatek.hardware.mbrain-V1-ndk \
-    vendor.mediatek.hardware.mbrainj-V1-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk-vendor \
-    vendor.mediatek.hardware.mtkpower@1.0-vendor \
-    vendor.mediatek.hardware.mtkpower@1.1-vendor \
-    vendor.mediatek.hardware.mtkpower@1.2-vendor \
-    vendor.mediatek.hardware.mtkpower_applist-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
@@ -1672,18 +1561,12 @@ PRODUCT_PACKAGES += \
     libimsma_socketwrapper \
     libmtk_vt_service \
     libmtk_vt_wrapper \
-    libmtkperf_client \
     libsignal \
     libsink \
     libsource \
     libvcodec_cap \
     libvcodec_capenc \
-    libvsim-adaptor-client \
     libvt_avsync \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     com.xiaomi.plugin.arcsoftsr \
@@ -1755,9 +1638,9 @@ PRODUCT_PACKAGES += \
     libtruetone \
     libvideomode \
     com.google.android.widevine.nonupdatable \
-    ImsService \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
+    ImsService \
     goodix_sz_duchamp \
     mediatek-common \
     mediatek-framework \
@@ -1788,13 +1671,10 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
     manifest_isphal.xml \
-    manifest_mbrain.xml \
     manifest_media_c2_V1_2_default.xml \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
     mtkgnss-batching.xml \
-    mtkpower_applist-mtk-default.xml \
-    power-mediatek.xml \
     vendor.dolby.hardware.dms.xml \
     vendor.dolby.media.c2@1.0-service.xml \
     vendor.xiaomi.hardware.bgservice@1.0-service.xml \
@@ -1832,11 +1712,8 @@ PRODUCT_PACKAGES += \
     vendor.dolby.hardware.dms@2.0-service \
     vendor.dolby.media.c2@1.0-service \
     vendor.mediatek.hardware.gnss-service \
-    vendor.mediatek.hardware.mbrain-service.mediatek \
     vendor.mediatek.hardware.mmagent-service \
     vendor.mediatek.hardware.mmlpq@V1-service \
-    vendor.mediatek.hardware.mtkpower-service.mediatek \
-    vendor.mediatek.hardware.mtkpower_applist-service.mediatek \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \

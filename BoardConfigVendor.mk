@@ -12,11 +12,13 @@ AB_OTA_PARTITIONS += \
     dpm \
     gpueb \
     gz \
+    lk \
     mcf_ota \
     mcupm \
     modem \
     mvpu_algo \
     pi_img \
+    preloader_raw \
     scp \
     spmfw \
     sspm \
