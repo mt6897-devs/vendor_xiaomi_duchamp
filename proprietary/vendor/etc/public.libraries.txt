@@ -3,3 +3,7 @@ libnir_neon_driver_ndk.mtk.vndk.so
 libcmdl_ndk.mtk.vndk.so
 libarmnn_ndk.mtk.vndk.so
 libmiocr.so
+libneuron_runtime.so
+libmvpu_pattern_25_pub.so
+libmvpu_engine_25_pub.so
+libmvpu_config.so

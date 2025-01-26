@@ -33,6 +33,20 @@
                     ]
                 },
                 {
+                    "RoleName":"PhotoSat",
+                    "SuportFunctionList":[
+                        {
+                            "Function": "HDR"
+                        },
+                        {
+                            "Function": "MFNR"
+                        },
+                        {
+                            "Function": "BEAUTY"
+                        }
+                    ]
+                },
+                {
                     "RoleName": "Front",
                     "SuportFunctionList": [
                         {

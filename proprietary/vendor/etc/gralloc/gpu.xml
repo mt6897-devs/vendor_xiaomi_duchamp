@@ -2,7 +2,7 @@
     <ip_capabilities ip="GPU">
         <feature name="FORMAT_R10G10B10A2" permission="RW" />
         <feature name="FORMAT_R16G16B16A16_FLOAT" permission="RW" />
-        <feature name="FORMAT_RGB16" permission="RW" />
+        <feature name="FORMAT_RGB16" permission="NO" />
         <feature name="AFBC_16X16" permission="RW" />
         <feature name="AFBC_32X8" permission="RW" />
         <feature name="AFBC_YUV" permission="RW" />
