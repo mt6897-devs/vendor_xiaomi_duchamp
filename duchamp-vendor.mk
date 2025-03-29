@@ -643,6 +643,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/em_hal_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hal_user.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
@@ -844,6 +845,8 @@ PRODUCT_PACKAGES += \
     libblisrc32_vendor \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
+    libbluetooth_relayer \
+    libbluetoothem_mtk \
     libbt-vendor \
     libbwc \
     libc++_shared \
@@ -1483,6 +1486,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.engineermode-V1-ndk \
     vendor.mediatek.hardware.gnss-V1-ndk \
     vendor.mediatek.hardware.mbrain-V1-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
@@ -1539,6 +1543,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hw.touchfeature-V1-ndk-vendor \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     libcomutils \
+    libem_support_jni \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
@@ -1546,7 +1551,7 @@ PRODUCT_PACKAGES += \
     libmtk_vt_service \
     libmtk_vt_wrapper \
     libsignal \
-    libsink \
+    libsink-mtk \
     libsource \
     libvcodec_cap \
     libvcodec_capenc \
@@ -1610,6 +1615,7 @@ PRODUCT_PACKAGES += \
     libmialgo_depth \
     libmialgo_ie_capture \
     libmialgo_utils \
+    libmiocr \
     libmiphone_capture_bokeh \
     libmiphone_capture_depth \
     libmlipay_mitee \
@@ -1624,6 +1630,7 @@ PRODUCT_PACKAGES += \
     com.google.android.widevine.nonupdatable \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
+    EngineerMode \
     ImsService \
     goodix_sz_duchamp \
     com.android.hotwordenrollment.common.util \
@@ -1645,6 +1652,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-service.mitee.xml \
     android.hardware.security.sharedsecret-service.mitee.xml \
     android.hardware.tetheroffload-V1-service.xml \
+    em_hal_service.xml \
     fod-aidl.xml \
     gnss-mtk-default.xml \
     gnss-mtk.xml \
@@ -1672,6 +1680,7 @@ PRODUCT_PACKAGES += \
     chipinfo \
     conninfra_loader \
     displayfeature \
+    em_hidl \
     fuelgauged \
     fuelgauged_nvram \
     android.hardware.bluetooth-service-mediatek \
