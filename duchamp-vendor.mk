@@ -630,6 +630,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/init.insmod.mt6897.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6897.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.bluetooth-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service-mediatek.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
@@ -646,13 +647,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/em_hal_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hal_user.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/hw/init.mtkgki.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mtkgki.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.mfp-daemon.aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.aidl.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/miteelog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/miteelog.rc \
@@ -747,7 +748,6 @@ PRODUCT_PACKAGES += \
     c2.dolby.hevc.dec \
     c2.dolby.hevc.sec.dec \
     c2.dolby.store \
-    com.fingerprints.extension3-V1-ndk \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
@@ -935,8 +935,6 @@ PRODUCT_PACKAGES += \
     libion_ulit \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libjpegdecoder-vendor \
-    libjpegencoder-vendor \
     libksensor \
     libladder \
     libmbrainSDKv \
@@ -1057,7 +1055,6 @@ PRODUCT_PACKAGES += \
     libsysenv \
     libteecli \
     libtrm \
-    libultrahdr-vendor \
     libvia-ril \
     libviamipc-ril \
     libvideoBokeh \
@@ -1532,8 +1529,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-V1-ndk-vendor \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk \
     vendor.xiaomi.hardware.bgservice@1.0 \
-    vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
-    vendor.xiaomi.hardware.fingerprintextension-V1-ndk-vendor \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.mfidoca-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
@@ -1573,8 +1568,8 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.skinbeautifier \
     com.xiaomi.plugin.swflip \
     displayfeature.default \
-    fingerprint.fpc_fod \
-    fingerprint.goodix_fod \
+    fingerprint.fpc_fod.default \
+    fingerprint.goodix_fod.default \
     libArcNetMtk \
     libMiDispDevManager \
     libTrueSight \
@@ -1629,7 +1624,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleRISCV \
     EngineerMode \
     ImsService \
-    goodix_sz_duchamp \
     com.android.hotwordenrollment.common.util \
     mediatek-common \
     mediatek-framework \
@@ -1639,7 +1633,6 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    AHBF-V3-service.xml \
     CommandService.xml \
     android.hardware.bluetooth-service-mediatek.xml \
     android.hardware.gatekeeper-service.mitee.xml \
@@ -1650,7 +1643,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-service.mitee.xml \
     android.hardware.tetheroffload-V1-service.xml \
     em_hal_service.xml \
-    fod-aidl.xml \
     gnss-mtk-default.xml \
     gnss-mtk.xml \
     manifest_allocator.xml \
@@ -1690,7 +1682,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.mitee \
     dolbycodec2 \
-    mfp-daemon \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6897 \
     camerahalserver \
     mtkfusionrild \
@@ -1704,6 +1695,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
     vendor.xiaomi.hardware.secure_element-service \
     vtservice_aidl \
+    init.insmod \
     mi_thermald \
     miteelog \
     mnld \

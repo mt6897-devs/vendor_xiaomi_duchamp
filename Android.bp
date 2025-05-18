@@ -230,31 +230,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.fingerprints.extension3-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.fingerprints.extension3-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libGLES_meow",
     owner: "xiaomi",
     strip: {
@@ -1824,7 +1799,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -6004,62 +5978,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libjpegdecoder-vendor",
-    stem: "libjpegdecoder",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjpegdecoder.so",
-            ],
-            shared_libs: [
-                "libjpeg",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjpegencoder-vendor",
-    stem: "libjpegencoder",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjpegencoder.so",
-            ],
-            shared_libs: [
-                "libjpeg",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libksensor",
     owner: "xiaomi",
     strip: {
@@ -9481,37 +9399,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmtkrillog",
                 "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libultrahdr-vendor",
-    stem: "libultrahdr",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libultrahdr.so",
-            ],
-            shared_libs: [
-                "libimage_io",
-                "libjpeg",
-                "libjpegencoder-vendor",
-                "libjpegdecoder-vendor",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -20560,6 +20447,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.jpegnode.so",
             ],
             shared_libs: [
+                "libultrahdr_shim",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -20592,7 +20480,7 @@ cc_prebuilt_library_shared {
                 "libmediandk",
                 "libmtkcam_externalisploader",
                 "libmtkcam_hwnode",
-                "libultrahdr-vendor",
+                "libultrahdr",
                 "libjpeg",
                 "libmtkcam_tuning_utils",
                 "libc++",
@@ -22993,7 +22881,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     relative_install_path: "mt6897",
     prefer: true,
     soc_specific: true,
@@ -25598,57 +25485,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.fingerprintextension-V1-ndk-vendor",
-    stem: "vendor.xiaomi.hardware.fingerprintextension-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.fx.tunnel-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -26974,7 +26810,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.fpc_fod",
+    name: "fingerprint.fpc_fod.default",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26982,7 +26818,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/hw/fingerprint.fpc_fod.so",
+                "proprietary/odm/lib64/hw/fingerprint.fpc_fod.default.so",
             ],
             shared_libs: [
                 "liblog",
@@ -27011,7 +26847,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.goodix_fod",
+    name: "fingerprint.goodix_fod.default",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -27019,7 +26855,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/hw/fingerprint.goodix_fod.so",
+                "proprietary/odm/lib64/hw/fingerprint.goodix_fod.default.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -27130,7 +26966,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     device_specific: true,
 }
@@ -27161,7 +26996,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     device_specific: true,
 }
@@ -27271,7 +27105,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     device_specific: true,
 }
@@ -27382,7 +27215,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     device_specific: true,
 }
@@ -28646,17 +28478,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "goodix_sz_duchamp",
-    owner: "xiaomi",
-    apk: "proprietary/odm/app/goodix_sz_duchamp/goodix_sz_duchamp.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    device_specific: true,
-}
-
 dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "xiaomi",
@@ -28736,15 +28557,6 @@ dex_import {
         "proprietary/system_ext/framework/mediatek-telephony-common.jar",
     ],
     system_ext_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "AHBF-V3-service.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/AHBF-V3-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -28832,15 +28644,6 @@ prebuilt_etc_xml {
     name: "em_hal_service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/em_hal_service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "fod-aidl.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/fod-aidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -29627,49 +29430,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "mfp-daemon",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/mfp-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "libvndksupport",
-                "libbinder",
-                "libbinder_ndk",
-                "android.hardware.biometrics.fingerprint-V4-ndk",
-                "android.hardware.biometrics.common-V4-ndk",
-                "android.hardware.biometrics.common.thread",
-                "android.hardware.biometrics.common.util",
-                "vendor.xiaomi.hardware.fingerprintextension-V1-ndk-vendor",
-                "com.fingerprints.extension3-V1-ndk",
-                "vendor.xiaomi.hardware.fx.tunnel-V1-ndk",
-                "vendor.xiaomi.hw.touchfeature-V1-ndk-vendor",
-                "libstagefright_foundation",
-                "android.frameworks.sensorservice@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.graphics.allocator-V2-service-mediatek.mt6897",
     owner: "xiaomi",
     target: {
@@ -30123,6 +29883,14 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.insmod",
+    owner: "xiaomi",
+    src: "proprietary/vendor/bin/init.insmod.sh",
+    filename: "init.insmod.sh",
     soc_specific: true,
 }
 
