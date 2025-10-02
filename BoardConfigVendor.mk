@@ -10,6 +10,7 @@ AB_OTA_PARTITIONS += \
     connsys_gnss \
     connsys_wifi \
     dpm \
+    dtbo \
     gpueb \
     gz \
     lk \

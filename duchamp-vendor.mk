@@ -409,7 +409,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-miteeservice.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca-miteeservice.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-miteeservice.rc \
-    vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/duchamp/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
     vendor/xiaomi/duchamp/proprietary/odm/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp.conf \
@@ -590,9 +589,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f4w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f4w.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f5b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5b.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/mimotion_f5w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5w.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -604,6 +600,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_1and1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_1and1.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
@@ -631,7 +628,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init.insmod.mt6897.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6897.cfg \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.bluetooth-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service-mediatek.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
@@ -663,20 +659,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/secure_element-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secure_element-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.dolbyvision.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolbyvision.media.c2@1.0-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
@@ -701,13 +694,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/aw8697_rtp_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp_1.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/connfem.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/connfem.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/conninfra.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/conninfra.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/focaltech_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_cfg_group_duchamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_duchamp.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_cfg_group_duchamp_nowater.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_duchamp_nowater.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_firmware_duchamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_duchamp.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/lib3a.ccu_dummy:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu_dummy \
@@ -720,6 +713,201 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/soc_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_coeff.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/0_click_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/0_click_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/101_offlineCountdown_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/101_offlineCountdown_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/102_sceneBombInjury_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/102_sceneBombInjury_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/103_sceneBomb_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/103_sceneBomb_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/104_doorOpen_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/104_doorOpen_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/106_sceneStep_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/106_sceneStep_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/107_crawl_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/107_crawl_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/108_scopeOn_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/108_scopeOn_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/109_scopeOff_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/109_scopeOff_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/10_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/10_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/110_magazineQuick_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/110_magazineQuick_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/111_grenade_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/111_grenade_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/112_sceneGetshot_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/112_sceneGetshot_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/113_grenadeExplosion_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/113_grenadeExplosion_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/114_punch_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/114_punch_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/115_pan_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/115_pan_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/116_bandage_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/116_bandage_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/118_sceneJump_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/118_sceneJump_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/119_vehiclePlane_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/119_vehiclePlane_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/11_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/11_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/120_sceneOpenparachute_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/120_sceneOpenparachute_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/121_sceneCloseparachute_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/121_sceneCloseparachute_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/122_vehicleCollision_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/122_vehicleCollision_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/123_vehicleBuggy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/123_vehicleBuggy_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/124_vehicleDacia_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/124_vehicleDacia_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/125_vehicleMoto_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/125_vehicleMoto_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/126_firearmsAkm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/126_firearmsAkm_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/127_firearmsM16a4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/127_firearmsM16a4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/128_firearmsAwm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/128_firearmsAwm_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/12_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/12_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/130_firearmsMini14_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/130_firearmsMini14_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/131_firearmsVss_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/131_firearmsVss_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/132_firearmsQbz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/132_firearmsQbz_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/133_firearmsUmp9_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/133_firearmsUmp9_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/134_firearmsDp28_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/134_firearmsDp28_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/135_firearmsS1897_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/135_firearmsS1897_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/137_firearmsP18c_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/137_firearmsP18c_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/13_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/13_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/140_cfmKillOne_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/140_cfmKillOne_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/141_cfmHeadshot_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/141_cfmHeadshot_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/142_cfmMultiKill_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/142_cfmMultiKill_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/143_cfmKillOneStrong_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/143_cfmKillOneStrong_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/144_cfmHeadshotStrong_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/144_cfmHeadshotStrong_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/145_cfmMultiKillStrong_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/145_cfmMultiKillStrong_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/146_cfmWeaponGrenadeExplode_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/146_cfmWeaponGrenadeExplode_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/147_cfmWeaponGrenadeKillOne_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/147_cfmWeaponGrenadeKillOne_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/148_cfmImpactFleshNormal_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/148_cfmImpactFleshNormal_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/149_cfmWeaponC4Installed_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/149_cfmWeaponC4Installed_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/14_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/14_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/150_cfmHeroAppear_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/150_cfmHeroAppear_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/151_cfmUIRewardOpenBox_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/151_cfmUIRewardOpenBox_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/152_cfmUIRewardTask_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/152_cfmUIRewardTask_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/153_cfmWeaponBLTShoot_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/153_cfmWeaponBLTShoot_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/154_Atlantis_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/154_Atlantis_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/155_DigitalUniverse_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/155_DigitalUniverse_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/156_Reveries_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/156_Reveries_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/157_fodMotionTriang_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/157_fodMotionTriang_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/158_fodMotionFlare_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/158_fodMotionFlare_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/159_fodMotionRipple_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/159_fodMotionRipple_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/15_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/15_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/160_fodMotionSpiral_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/160_fodMotionSpiral_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/161_gameboxLaunch_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/161_gameboxLaunch_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/162_GestureBackPull_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/162_GestureBackPull_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/163_GestureBackRelease_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/163_GestureBackRelease_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/164_alert_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/164_alert_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/165_feedbackNegativeLight_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/165_feedbackNegativeLight_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/166_feedbackNeutral_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/166_feedbackNeutral_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/167_feedbackPositive_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/167_feedbackPositive_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/168_fingerprintRecord_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/168_fingerprintRecord_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/169_lockdown_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/169_lockdown_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/16_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/16_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/170_slidingDamping_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/170_slidingDamping_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/171_todoAlldone_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/171_todoAlldone_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/172_uninstallAnimationIcon_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/172_uninstallAnimationIcon_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/173_signalButtonHighlight_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/173_signalButtonHighlight_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/174_signalButtonNegative_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/174_signalButtonNegative_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/175_signalButton_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/175_signalButton_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/176_signalClockHigh_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/176_signalClockHigh_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/177_signalClock_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/177_signalClock_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/178_signalClockUnit_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/178_signalClockUnit_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/179_signalInputbox_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/179_signalInputbox_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/17_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/17_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/180_signalKeyHigh_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/180_signalKeyHigh_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/181_signalKeyUnit_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/181_signalKeyUnit_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/182_signalListHighlight_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/182_signalListHighlight_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/183_signalList_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/183_signalList_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/184_signalPicker_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/184_signalPicker_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/185_signalPopup_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/185_signalPopup_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/186_signalSeekbar_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/186_signalSeekbar_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/187_signalSwitch_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/187_signalSwitch_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/188_signalTab_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/188_signalTab_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/189_signalText_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/189_signalText_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/18_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/18_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/190_signalTransitionLight_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/190_signalTransitionLight_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/191_signalTransition_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/191_signalTransition_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/192_hapticsVideo_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/192_hapticsVideo_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/19_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/19_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/1_doubelClick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/1_doubelClick_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/201_BoundaryBounce_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/201_BoundaryBounce_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/202_BoundaryBottom_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/202_BoundaryBottom_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/203_BoundaryTop_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/203_BoundaryTop_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/204_SlideTag_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/204_SlideTag_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/205_SuperPositive_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/205_SuperPositive_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/206_Positive_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/206_Positive_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/207_Negative_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/207_Negative_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/208_Mute_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/208_Mute_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/209_ScreenLock_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/209_ScreenLock_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/20_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/20_ringTone4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/210_FingerprintUnlock_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/210_FingerprintUnlock_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/211_Charge_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/211_Charge_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/212_NotificationCleanup_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/212_NotificationCleanup_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/213_ProcessCleanup_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/213_ProcessCleanup_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/214_APPUninstallation_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/214_APPUninstallation_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/215_GameBoxStartup_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/215_GameBoxStartup_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/216_EdittingMode_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/216_EdittingMode_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/217_CameraShutter_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/217_CameraShutter_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/23_Candy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/23_Candy_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/24_Carousel_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/24_Carousel_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/25_Celesta_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/25_Celesta_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/26_Childhood_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/26_Childhood_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/27_Country_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/27_Country_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/28_Cowboy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/28_Cowboy_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/2_tick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/2_tick_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/30_Fairyland_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/30_Fairyland_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/31_Fantasy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/31_Fantasy_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/32_FieldTrip_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/32_FieldTrip_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/33_Glee_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/33_Glee_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/35_IceLatte_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/35_IceLatte_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/36_KungFu_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/36_KungFu_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/38_Lollipop_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/38_Lollipop_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/39_MiMix2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/39_MiMix2_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/3_thud_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/3_thud_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/40_Mi_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/40_Mi_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/41_MiHouse_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/41_MiHouse_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/42_MiJazz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/42_MiJazz_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/43_MiRemix_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/43_MiRemix_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/44_MountainSpring_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/44_MountainSpring_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/45_Orange_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/45_Orange_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/46_WindChime_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/46_WindChime_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/47_SpaceAge_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/47_SpaceAge_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/48_ToyRobot_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/48_ToyRobot_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/49_Vigor_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/49_Vigor_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/4_pop_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/4_pop_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/50_Bottle_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/50_Bottle_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/51_Bubble_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/51_Bubble_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/521_AcousticGuitar_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/521_AcousticGuitar_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/52_Bullfrog_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/52_Bullfrog_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/53_Burst_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/53_Burst_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/54_Chirp_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/54_Chirp_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/55_Clank_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/55_Clank_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/56_Crystal_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/56_Crystal_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/57_FadeIn_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/57_FadeIn_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/58_FadeOut_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/58_FadeOut_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/59_Flute_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/59_Flute_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/5_heavyClick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/5_heavyClick_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/60_Fresh_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/60_Fresh_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/61_Frog_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/61_Frog_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/62_Guitar_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/62_Guitar_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/63_Harp_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/63_Harp_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/64_IncomingMessage_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/64_IncomingMessage_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/65_MessageSent_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/65_MessageSent_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/66_Moment_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/66_Moment_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/67_NotificationXylophone_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/67_NotificationXylophone_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/68_Potion_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/68_Potion_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/69_Radar_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/69_Radar_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/6_ringTone1_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/6_ringTone1_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/70_Spring_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/70_Spring_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/71_Swoosh_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/71_Swoosh_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/72_GestureUpSlide_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/72_GestureUpSlide_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/73_fodMotionPlanet_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/73_fodMotionPlanet_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/74_ChargeWire_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/74_ChargeWire_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/75_ChargeWireless_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/75_ChargeWireless_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/76_UnlockFailed_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/76_UnlockFailed_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/77_fodMotion1_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/77_fodMotion1_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/78_fodMotion2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/78_fodMotion2_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/79_fodMotion3_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/79_fodMotion3_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/7_ringTone2_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/7_ringTone2_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/80_fodMotion4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/80_fodMotion4_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/81_fodMotionAurora_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/81_fodMotionAurora_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/82_FaceIDWrong2_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/82_FaceIDWrong2_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/83_uninstallAnimation_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/83_uninstallAnimation_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/84_uninstallDialog_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/84_uninstallDialog_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/85_screenshot_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/85_screenshot_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/86_lockscreenCameraEntry_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/86_lockscreenCameraEntry_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/87_launcherEdit_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/87_launcherEdit_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/88_launcherIconSelection_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/88_launcherIconSelection_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/8_ringTone3_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/8_ringTone3_P_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/90_taskCleanAll_Rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/90_taskCleanAll_Rtp.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/91_newIconFolder_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/91_newIconFolder_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/92_notificationRemove_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/92_notificationRemove_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/93_notificationCleanall_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/93_notificationCleanall_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/96_nfcCard_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/96_nfcCard_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/98_nfcCardSlow_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/98_nfcCardSlow_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/99_POCO_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/99_POCO_RTP.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/9_ringTone4_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/9_ringTone4_P_RTP.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
@@ -744,17 +932,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
-    c2.dolby.client \
-    c2.dolby.hevc.dec \
-    c2.dolby.hevc.sec.dec \
-    c2.dolby.store \
+    android.hardware.security.keymint-V3-ndk-v34 \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
     libMEOW_qt \
     libMEOW_trace \
     libGLES_mali \
-    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mediatek \
@@ -786,7 +970,6 @@ PRODUCT_PACKAGES += \
     lib3a.custom.shading.flow \
     libAF \
     libBasicModule \
-    libDecoderProcessor \
     libDefaultFpsActor \
     libFrameRecord \
     libHISCppAlgos \
@@ -806,12 +989,10 @@ PRODUCT_PACKAGES += \
     libaal_cust \
     libaal_key \
     libaal_sec \
-    libadpcmdec_mtk \
     libaedv \
     libaibld.nn6 \
     libaimemc \
     libaispq \
-    libalacdec_mtk \
     libalgobaseutils \
     libalsautils-v34 \
     libappgamepq \
@@ -871,13 +1052,6 @@ PRODUCT_PACKAGES += \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_soft_ac4dec \
-    libcodec2_soft_ddpdec \
-    libcodec2_soft_mtk_alacdec \
-    libcodec2_soft_mtk_imaadpcmdec \
-    libcodec2_soft_mtk_mp3dec \
-    libcodec2_soft_mtk_msadpcmdec \
-    libcodec2_store_dolby \
     libcodec2_vpp_fa_plugin \
     libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
@@ -896,17 +1070,11 @@ PRODUCT_PACKAGES += \
     libconnfem \
     libcustom_nvram \
     libcvsd_mtk \
-    libdapparamstorage \
-    libdeccfg \
     libdeflicker \
     libdfintf \
     libdisplayfeature \
     libdisplayfeatureservice \
-    libdlbdsservice \
-    libdlbpreg \
-    libdolbyottcameracontrol \
     libdre \
-    libeglcore \
     libfeature.hdr10 \
     libfeaturepolicy \
     libfgauge_gm30 \
@@ -961,7 +1129,6 @@ PRODUCT_PACKAGES += \
     libmisoundfpsop \
     libmispowerop \
     libmnetlink_v104 \
-    libmp3dec_mtk \
     libmpbase \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
@@ -1048,7 +1215,6 @@ PRODUCT_PACKAGES += \
     libscltm \
     libsilkybrightnesscore \
     libsn100u_fw \
-    libspatializerparamstorage \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstorage_otp \
@@ -1451,13 +1617,7 @@ PRODUCT_PACKAGES += \
     libpqparamparser \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
-    libdlbvol \
-    libswdap \
-    libswgamedap \
-    libswspatializer \
-    libswvqe \
-    vendor.dolby.hardware.dms@2.0-impl \
-    vendor.dolby.hardware.dms@2.0 \
+    vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk \
     vendor.mediatek.hardware.apuware.apusys-V2-ndk \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
     vendor.mediatek.hardware.apuware.utils@2.0 \
@@ -1532,7 +1692,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.mfidoca-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
-    vendor.xiaomi.hw.touchfeature-V1-ndk-vendor \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     libcomutils \
     libem_support_jni \
@@ -1619,6 +1778,7 @@ PRODUCT_PACKAGES += \
     libsre \
     libtruetone \
     libvideomode \
+    vendor.awa.wavelib \
     com.google.android.widevine.nonupdatable \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
@@ -1634,7 +1794,6 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     CommandService.xml \
-    android.hardware.bluetooth-service-mediatek.xml \
     android.hardware.gatekeeper-service.mitee.xml \
     android.hardware.identity@5.0-service.mitee.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1654,14 +1813,12 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_V1_2_default.xml \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
-    vendor.dolby.hardware.dms.xml \
-    vendor.dolby.media.c2@1.0-service.xml \
     vendor.xiaomi.hardware.bgservice@1.0-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
+    vendor.xiaomi.hardware.vibratorfeature.service.xml \
     manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
     manifest_vendor.xiaomi.hardware.mfidoca.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
-    vendor.xiaomi.hw.touchfeature-service.xml \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     batterysecret \
     ccci_mdinit \
@@ -1672,7 +1829,6 @@ PRODUCT_PACKAGES += \
     em_hidl \
     fuelgauged \
     fuelgauged_nvram \
-    android.hardware.bluetooth-service-mediatek \
     android.hardware.gatekeeper-service.mitee \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.2-service \
@@ -1681,19 +1837,17 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.mitee \
-    dolbycodec2 \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6897 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
-    vendor.dolby.hardware.dms@2.0-service \
-    vendor.dolby.media.c2@1.0-service \
     vendor.mediatek.hardware.mmagent-service \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
     vendor.xiaomi.hardware.secure_element-service \
+    vendor.xiaomi.hardware.vibratorfeature.service \
     vtservice_aidl \
     init.insmod \
     mi_thermald \
@@ -1706,7 +1860,6 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     vtservice \
     fidoca_mitee \
-    vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
     mlipayd_mitee \
     mtd_mitee
