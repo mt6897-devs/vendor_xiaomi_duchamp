@@ -281,7 +281,7 @@ cc_prebuilt_library_shared {
                 "libgralloctypes_mtk",
                 "libcutils",
                 "libhardware",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libbase",
                 "libutilscallstack",
                 "libdmabufheap",
@@ -296,6 +296,51 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "egl/mt6897",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.audio@7.1-impl-mediatek",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.audio@7.1-impl-mediatek.so",
+            ],
+            shared_libs: [
+                "libaudiofoundation",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libmediautils_vendor",
+                "libmemunreachable",
+                "liblog",
+                "libutils",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio@7.1",
+                "android.hardware.audio@7.1-util",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.1-enums",
+                "android.hardware.audio.common@7.1-util",
+                "android.hardware.audio.common-util",
+                "vendor.mediatek.hardware.audio@8.1",
+                "libmedia_helper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -433,36 +478,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.r_submix.mediatek",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libutils",
-                "libnbaio_mono",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "consumerir.common",
     owner: "xiaomi",
     strip: {
@@ -583,41 +598,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.camera.provider@2.6-impl-mediatek",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/mt6897/android.hardware.camera.provider@2.6-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "libmtkcam_hal_hidl_provider",
-                "libmtkcam_hal_hidl_device",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "android.hardware.camera.common@1.0",
-                "android.hardware.camera.provider@2.4",
-                "android.hardware.camera.provider@2.5",
-                "android.hardware.camera.provider@2.6",
-                "libmtkcam_ulog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw/mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.graphics.allocator-V2-mediatek",
     owner: "xiaomi",
     strip: {
@@ -635,7 +615,7 @@ cc_prebuilt_library_shared {
                 "libdrm",
                 "libutils",
                 "libcutils",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloc_extra",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
@@ -677,7 +657,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "arm.graphics-V4-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloc_extra",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
@@ -723,7 +703,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "arm.graphics-V4-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libhidlbase",
                 "libdrm",
                 "android.hardware.graphics.mapper@4.0",
@@ -743,134 +723,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.common@1.2",
                 "liblog",
                 "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw/mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.atms@1.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.atms@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "libhidltransport",
-                "vendor.mediatek.hardware.camera.atms@1.0",
-                "libcutils",
-                "libmtkcam.atmseventmgr",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw/mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.bgservice@1.1-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libcamera_metadata",
-                "libhidlbase",
-                "libhidltransport",
-                "vendor.mediatek.hardware.camera.bgservice@1.0",
-                "vendor.mediatek.hardware.camera.bgservice@1.1",
-                "libmtkcam_stdutils",
-                "libmtkcam.eventcallback",
-                "libmtkcam_ulog",
-                "libmtkcam.debugwrapper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw/mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.isphal@1.1-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libcamera_metadata",
-                "libhidlbase",
-                "libhidltransport",
-                "vendor.mediatek.hardware.camera.isphal@1.0",
-                "vendor.mediatek.hardware.camera.isphal@1.1",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "libmtkcam_ulog",
-                "libmtkcam.debugwrapper",
-                "libmtkcam_sysutils",
-                "libmtkcam_stdutils",
-                "libmtkcam_metadata",
-                "libmtkisp_metadata_v2",
-                "libmtkcam_streamutils",
-                "libmtkcam_packutils",
-                "libmtkcam_modulehelper",
-                "libnativewindow",
-                "libmtkcam_grallocutils",
-                "libmtkcam_imgbuf_v2",
-                "libmtkcam_hwutils_android",
-                "libmtkcam_postprocprovider",
-                "libmtkcam_thirdparty.core",
-                "libcamalgo.fdft",
-                "libmtkcam_hwutils",
-                "libmtkcam_perfctrl",
-                "libcam.halsensor",
                 "libc++",
                 "libc",
                 "libm",
@@ -2012,7 +1864,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@2.0",
                 "android.hardware.graphics.allocator@3.0",
                 "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@2.1",
@@ -3626,7 +3478,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@3.0",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@2.1",
@@ -5305,6 +5157,60 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjpegdecoder-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjpegdecoder-v34.so",
+            ],
+            shared_libs: [
+                "libjpeg",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjpegencoder-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjpegencoder-v34.so",
+            ],
+            shared_libs: [
+                "libjpeg",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libksensor",
     owner: "xiaomi",
     strip: {
@@ -6417,7 +6323,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.mapper@4.0",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libvndksupport",
                 "libbinder_ndk",
                 "libgralloctypes",
@@ -8682,6 +8588,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libultrahdr-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libultrahdr-v34.so",
+            ],
+            shared_libs: [
+                "libimage_io",
+                "libjpeg",
+                "libjpegencoder-v34",
+                "libjpegdecoder-v34",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvia-ril",
     owner: "xiaomi",
     strip: {
@@ -9118,7 +9054,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal-mtk",
+    name: "libwapi",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -9126,14 +9062,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
+                "proprietary/vendor/lib64/libwapi.so",
             ],
             shared_libs: [
-                "libbase",
-                "libcutils",
+                "libkeystore-wifi-hidl",
+                "libcrypto",
                 "liblog",
-                "libnl",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -18662,7 +18596,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.mapper@4.0",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloctypes",
                 "libmtkcam_grallocutils_aidlv1helper",
                 "libc++",
@@ -19499,173 +19433,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtkcam_hal_hidl_common",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_common.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_ulog",
-                "android.hardware.camera.common@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkcam_hal_hidl_device",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_device.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libfmq",
-                "android.hardware.camera.device@3.2",
-                "android.hardware.camera.device@3.3",
-                "android.hardware.camera.device@3.4",
-                "android.hardware.camera.device@3.5",
-                "android.hardware.camera.device@3.6",
-                "libcamera_metadata",
-                "libmtkcam_ulog",
-                "libmtkcam_stdutils",
-                "libmtkcam_debugutils",
-                "libmtkcam_hal_hidl_common",
-                "libmtkcam_hal_hidl_utils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkcam_hal_hidl_provider",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_provider.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.provider@2.4",
-                "android.hardware.camera.provider@2.5",
-                "android.hardware.camera.provider@2.6",
-                "android.hardware.camera.device@3.6",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common@1.2",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libcamera_metadata",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libfmq",
-                "libmtkcam_hal_android_provider",
-                "libmtkcam_hal_hidl_common",
-                "libmtkcam_hal_hidl_device",
-                "libmtkcam_ulog",
-                "libmtkcam_metaconv",
-                "libmtkcam_stdutils",
-                "libui",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkcam_hal_hidl_utils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6897/libmtkcam_hal_hidl_utils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libfmq",
-                "android.hardware.camera.device@3.2",
-                "android.hardware.camera.device@3.3",
-                "android.hardware.camera.device@3.4",
-                "android.hardware.camera.device@3.5",
-                "android.hardware.camera.device@3.6",
-                "libmtkcam_stdutils",
-                "libmtkcam_imgbuf_v2",
-                "libmtkcam_grallocutils",
-                "libmtkcam_hwutils",
-                "libmtkcam_sysutils",
-                "libmtkcam_metadata",
-                "libmtkcam_modulehelper",
-                "libmtkcam_streamutils",
-                "libcamera_metadata",
-                "libmtkcam_ulog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6897",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmtkcam_halisp_custom",
     owner: "xiaomi",
     strip: {
@@ -19717,7 +19484,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6897/libmtkcam_hwnode.jpegnode.so",
             ],
             shared_libs: [
-                "libultrahdr_shim",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -19750,7 +19516,7 @@ cc_prebuilt_library_shared {
                 "libmediandk",
                 "libmtkcam_externalisploader",
                 "libmtkcam_hwnode",
-                "libultrahdr",
+                "libultrahdr-v34",
                 "libjpeg",
                 "libmtkcam_tuning_utils",
                 "libc++",
@@ -22786,34 +22552,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.atms@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.camera.bgservice-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -22826,63 +22564,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.bgservice@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.bgservice@1.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.camera.bgservice@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -22970,68 +22651,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.isphal@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.isphal@1.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.2",
-                "vendor.mediatek.hardware.camera.isphal@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -24405,7 +24025,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -24432,7 +24052,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -24459,7 +24079,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -27546,6 +27166,18 @@ android_app_import {
     system_ext_specific: true,
 }
 
+android_app_import {
+    name: "MtkGbaService",
+    owner: "xiaomi",
+    apk: "proprietary/system_ext/priv-app/MtkGbaService/MtkGbaService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
 dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "xiaomi",
@@ -28411,7 +28043,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897",
             ],
             shared_libs: [
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloc_extra",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
@@ -29516,20 +29148,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_hw_audio_r_submix_mt6897_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/audio.r_submix.mt6897.so",
-    symlink_target: "/vendor/lib64/hw/audio.r_submix.mediatek.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so",
-    symlink_target: "/vendor/lib64/hw/mt6897/android.hardware.camera.provider@2.6-impl-mediatek.so",
-}
-
-install_symlink {
     name: "vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so",
     soc_specific: true,
     installed_location: "lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so",
@@ -29548,27 +29166,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/mapper.mediatek.so",
     symlink_target: "/vendor/lib64/hw/mt6897/mapper.mediatek.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so",
-    symlink_target: "/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.atms@1.0-impl.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
-    symlink_target: "/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
-    symlink_target: "/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
 }
 
 install_symlink {
@@ -31683,34 +31280,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libmtkcam_hal_custom_provider.so",
     symlink_target: "/vendor/lib64/mt6897/libmtkcam_hal_custom_provider.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libmtkcam_hal_hidl_common_so",
-    soc_specific: true,
-    installed_location: "lib64/libmtkcam_hal_hidl_common.so",
-    symlink_target: "/vendor/lib64/mt6897/libmtkcam_hal_hidl_common.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libmtkcam_hal_hidl_device_so",
-    soc_specific: true,
-    installed_location: "lib64/libmtkcam_hal_hidl_device.so",
-    symlink_target: "/vendor/lib64/mt6897/libmtkcam_hal_hidl_device.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libmtkcam_hal_hidl_provider_so",
-    soc_specific: true,
-    installed_location: "lib64/libmtkcam_hal_hidl_provider.so",
-    symlink_target: "/vendor/lib64/mt6897/libmtkcam_hal_hidl_provider.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libmtkcam_hal_hidl_utils_so",
-    soc_specific: true,
-    installed_location: "lib64/libmtkcam_hal_hidl_utils.so",
-    symlink_target: "/vendor/lib64/mt6897/libmtkcam_hal_hidl_utils.so",
 }
 
 install_symlink {

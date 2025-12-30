@@ -444,6 +444,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/duchamp/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -567,6 +568,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/audiodata.db:$(TARGET_COPY_OUT_VENDOR)/etc/audiodata.db \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_class_all.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_all.dla \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_class_human.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_human.dla \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/camera/af_classify.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_classify.dla \
@@ -682,13 +686,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
+    vendor/xiaomi/duchamp/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/wifi/nvram/wfnv_desc_data_soc70.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram/wfnv_desc_data_soc70.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/etc/wifi/nvram/wfnv_desc_map_soc70.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram/wfnv_desc_map_soc70.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
@@ -702,14 +705,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/focaltech_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_cfg_group_duchamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_duchamp.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_firmware_duchamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_duchamp.bin \
+    vendor/xiaomi/duchamp/proprietary/vendor/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits_255.csv \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/lib3a.ccu_dummy:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu_dummy \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/mali_csffw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/mt6635_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_coeff.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/mt6635_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_patch.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
-    vendor/xiaomi/duchamp/proprietary/vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_bt_1_1_hdr.bin \
-    vendor/xiaomi/duchamp/proprietary/vendor/firmware/soc7_0_ram_mcu_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_mcu_1_1_hdr.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/soc_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_coeff.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
@@ -909,7 +911,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/99_POCO_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/99_POCO_RTP.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/vib_173/9_ringTone4_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vib_173/9_ringTone4_P_RTP.bin \
     vendor/xiaomi/duchamp/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/xiaomi/duchamp/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/xiaomi/duchamp/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
     vendor/xiaomi/duchamp/proprietary/vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta \
     vendor/xiaomi/duchamp/proprietary/vendor/mitee/ta/2e8fade5-0c7a-46cc-810e6468baee66b9.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/2e8fade5-0c7a-46cc-810e6468baee66b9.ta \
@@ -939,20 +940,16 @@ PRODUCT_PACKAGES += \
     libMEOW_qt \
     libMEOW_trace \
     libGLES_mali \
+    android.hardware.audio@7.1-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mediatek \
-    audio.r_submix.mediatek \
     consumerir.common \
     gps.default \
     hwcomposer.mtk_common \
-    android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     mapper.mediatek \
-    vendor.mediatek.hardware.camera.atms@1.0-impl \
-    vendor.mediatek.hardware.camera.bgservice@1.1-impl \
-    vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vulkan.mali \
     mtkgeofence.default \
@@ -1103,6 +1100,8 @@ PRODUCT_PACKAGES += \
     libion_ulit \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
+    libjpegdecoder-v34 \
+    libjpegencoder-v34 \
     libksensor \
     libladder \
     libmbrainSDKv \
@@ -1221,6 +1220,7 @@ PRODUCT_PACKAGES += \
     libsysenv \
     libteecli \
     libtrm \
+    libultrahdr-v34 \
     libvia-ril \
     libviamipc-ril \
     libvideoBokeh \
@@ -1237,7 +1237,7 @@ PRODUCT_PACKAGES += \
     libvow_ap_test_trip_nn \
     libvow_comp_test \
     libvpu \
-    libwifi-hal-mtk \
+    libwapi \
     libwpfa \
     libwvkeybox \
     libxlog \
@@ -1540,10 +1540,6 @@ PRODUCT_PACKAGES += \
     libmtkcam_hal_core_utils \
     libmtkcam_hal_custom \
     libmtkcam_hal_custom_provider \
-    libmtkcam_hal_hidl_common \
-    libmtkcam_hal_hidl_device \
-    libmtkcam_hal_hidl_provider \
-    libmtkcam_hal_hidl_utils \
     libmtkcam_halisp_custom \
     libmtkcam_hwnode.jpegnode \
     libmtkcam_hwnode.p2 \
@@ -1627,15 +1623,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.aovservice-V2-ndk \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
-    vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice-V1-ndk \
-    vendor.mediatek.hardware.camera.bgservice@1.0 \
-    vendor.mediatek.hardware.camera.bgservice@1.1 \
     vendor.mediatek.hardware.camera.ccap@1.0 \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
     vendor.mediatek.hardware.camera.isphal-V1-ndk \
-    vendor.mediatek.hardware.camera.isphal@1.0 \
-    vendor.mediatek.hardware.camera.isphal@1.1 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
@@ -1784,6 +1775,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleRISCV \
     EngineerMode \
     ImsService \
+    MtkGbaService \
     com.android.hotwordenrollment.common.util \
     mediatek-common \
     mediatek-framework \
@@ -1903,14 +1895,9 @@ PRODUCT_PACKAGES += \
     vendor_etc_camera_gma_custom_xml \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6897_so \
-    vendor_lib64_hw_audio_r_submix_mt6897_so \
-    vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
     vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so \
     vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
     vendor_lib64_hw_mapper_mediatek_so \
-    vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
-    vendor_lib64_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
-    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
     vendor_lib64_hw_vulkan_mali_so \
     vendor_lib64_hw_sensors_mt6897_so \
@@ -2213,10 +2200,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmtkcam_hal_core_utils_so \
     vendor_lib64_libmtkcam_hal_custom_so \
     vendor_lib64_libmtkcam_hal_custom_provider_so \
-    vendor_lib64_libmtkcam_hal_hidl_common_so \
-    vendor_lib64_libmtkcam_hal_hidl_device_so \
-    vendor_lib64_libmtkcam_hal_hidl_provider_so \
-    vendor_lib64_libmtkcam_hal_hidl_utils_so \
     vendor_lib64_libmtkcam_halisp_custom_so \
     vendor_lib64_libmtkcam_hwnode_jpegnode_so \
     vendor_lib64_libmtkcam_hwnode_p2_so \
