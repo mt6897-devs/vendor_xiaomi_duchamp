@@ -1788,6 +1788,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libadpcmdec_mtk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadpcmdec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libaedv",
     owner: "xiaomi",
     strip: {
@@ -1913,6 +1941,34 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalacdec_mtk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libalacdec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -3504,6 +3560,167 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.0-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.0-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v34",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v35",
+                "libcodec2_hidl_plugin-v34",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.1-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.1-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-v34",
+                "libcodec2_vndk-v34",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v35",
+                "libcodec2_hidl_plugin-v34",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.2-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.2-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-v34",
+                "libcodec2_hidl@1.1-v34",
+                "libcodec2_vndk-v34",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v35",
+                "libcodec2_hidl_plugin-v34",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl_plugin-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl_plugin-v34.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v34",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcodec2_mtk_c2store",
     owner: "xiaomi",
     strip: {
@@ -3515,14 +3732,14 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common",
+                "libcodec2_soft_common-v34",
                 "libcutils",
                 "liblog",
-                "libsfplugin_ccodec_utils",
+                "libsfplugin_ccodec_utils-v34",
                 "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk-v34",
                 "libutils",
                 "libion",
                 "libion_mtk",
@@ -3564,14 +3781,14 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "libstagefright_bufferpool@2.0.1",
                 "libcodec2_fsr",
-                "libcodec2_soft_common",
+                "libcodec2_soft_common-v34",
                 "libcutils",
                 "liblog",
-                "libsfplugin_ccodec_utils",
+                "libsfplugin_ccodec_utils-v34",
                 "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk-v34",
                 "libutils",
                 "libion",
                 "libdmabufheap",
@@ -3617,20 +3834,237 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "libstagefright_bufferpool@2.0.1",
                 "libcodec2_fsr",
-                "libcodec2_soft_common",
+                "libcodec2_soft_common-v34",
                 "libcutils",
                 "liblog",
-                "libsfplugin_ccodec_utils",
+                "libsfplugin_ccodec_utils-v34",
                 "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk-v34",
                 "libutils",
                 "libion",
                 "libdmabufheap",
                 "libion_mtk",
                 "libcodec2_mtk_c2store",
                 "libcodec2_vpp_fa_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_common-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_common-v34.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v34",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v34",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_alacdec",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_alacdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v34",
+                "libcodec2_vndk-v34",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libalacdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_imaadpcmdec",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v34",
+                "libcodec2_vndk-v34",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_mp3dec",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_mp3dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v34",
+                "libcodec2_vndk-v34",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libmp3dec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_msadpcmdec",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v34",
+                "libcodec2_vndk-v34",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vndk-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vndk-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.bufferpool2-V2-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libdmabufheap",
+                "libfmq",
+                "libgralloctypes",
+                "libhidlbase",
+                "libion",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libstagefright_bufferpool@2.0.1",
+                "libstagefright_aidl_bufferpool2",
+                "libui-v34",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -3655,11 +4089,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_vpp_fa_plugin.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
+                "libcodec2_soft_common-v34",
+                "libsfplugin_ccodec_utils-v34",
                 "libstagefright_foundation",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk-v34",
                 "libgralloc_extra",
                 "liblog",
                 "libbase",
@@ -3689,11 +4123,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_vpp_mi_plugin.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
+                "libcodec2_soft_common-v34",
+                "libsfplugin_ccodec_utils-v34",
                 "libstagefright_foundation",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk-v34",
                 "libgralloc_extra",
                 "liblog",
                 "libbase",
@@ -3723,11 +4157,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
+                "libcodec2_soft_common-v34",
+                "libsfplugin_ccodec_utils-v34",
                 "libstagefright_foundation",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk-v34",
                 "libgralloc_extra",
                 "liblog",
                 "libbase",
@@ -3757,11 +4191,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
+                "libcodec2_soft_common-v34",
+                "libsfplugin_ccodec_utils-v34",
                 "libstagefright_foundation",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk-v34",
                 "libgralloc_extra",
                 "liblog",
                 "libbase",
@@ -5949,6 +6383,34 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmp3dec_mtk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmp3dec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -8381,6 +8843,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsfplugin_ccodec_utils-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsfplugin_ccodec_utils-v34.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v34",
+                "libcutils",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsilkybrightnesscore",
     owner: "xiaomi",
     strip: {
@@ -8471,6 +8965,41 @@ cc_prebuilt_library_shared {
                 "libaudioutils",
                 "libmedia_helper",
                 "libxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_bufferqueue_helper-v35",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-v35.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libgui",
                 "libc++",
                 "libc",
                 "libm",
@@ -27895,10 +28424,10 @@ cc_prebuilt_binary {
                 "android.hardware.media.c2@1.0",
                 "android.hardware.media.c2@1.1",
                 "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_hidl@1.2",
-                "libcodec2_vndk",
+                "libcodec2_hidl@1.0-v34",
+                "libcodec2_hidl@1.1-v34",
+                "libcodec2_hidl@1.2-v34",
+                "libcodec2_vndk-v34",
                 "libhidlbase",
                 "libavservices_minijail",
                 "libbinder",

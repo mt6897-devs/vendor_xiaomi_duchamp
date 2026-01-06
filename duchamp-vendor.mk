@@ -986,10 +986,12 @@ PRODUCT_PACKAGES += \
     libaal_cust \
     libaal_key \
     libaal_sec \
+    libadpcmdec_mtk \
     libaedv \
     libaibld.nn6 \
     libaimemc \
     libaispq \
+    libalacdec_mtk \
     libalgobaseutils \
     libalsautils-v34 \
     libappgamepq \
@@ -1046,9 +1048,19 @@ PRODUCT_PACKAGES += \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
     libcodec2_fsr \
+    libcodec2_hidl@1.0-v34 \
+    libcodec2_hidl@1.1-v34 \
+    libcodec2_hidl@1.2-v34 \
+    libcodec2_hidl_plugin-v34 \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_soft_common-v34 \
+    libcodec2_soft_mtk_alacdec \
+    libcodec2_soft_mtk_imaadpcmdec \
+    libcodec2_soft_mtk_mp3dec \
+    libcodec2_soft_mtk_msadpcmdec \
+    libcodec2_vndk-v34 \
     libcodec2_vpp_fa_plugin \
     libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
@@ -1128,6 +1140,7 @@ PRODUCT_PACKAGES += \
     libmisoundfpsop \
     libmispowerop \
     libmnetlink_v104 \
+    libmp3dec_mtk \
     libmpbase \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
@@ -1212,10 +1225,12 @@ PRODUCT_PACKAGES += \
     librilfusion \
     librt_extamp_intf \
     libscltm \
+    libsfplugin_ccodec_utils-v34 \
     libsilkybrightnesscore \
     libsn100u_fw \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libstagefright_bufferqueue_helper-v35 \
     libstorage_otp \
     libsysenv \
     libteecli \
